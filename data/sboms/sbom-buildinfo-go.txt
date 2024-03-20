@@ -1,0 +1,3072 @@
+viviandersson@ViviMac bin1 % bi go geth 
+[Info] Running 'go list -mod=mod -m' in /Users/viviandersson/scs-thesis
+[Info] Running 'go mod graph' in /Users/viviandersson/scs-thesis
+[Info] Running 'go list -mod=mod -f {{with .Module}}{{.Path}}:{{.Version}}{{end}} all' in /Users/viviandersson/scs-thesis
+{
+  "name": "go-build",
+  "number": "1",
+  "agent": {},
+  "buildAgent": {
+    "name": "GENERIC"
+  },
+  "modules": [
+    {
+      "type": "go",
+      "id": "github.com/anderssonvivi/scs-thesis",
+      "dependencies": [
+        {
+          "id": "github.com/goark/errs:v1.1.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/anderssonvivi/scs-thesis"
+            ],
+            [
+              "github.com/goark/go-cvss:v1.6.6",
+              "github.com/anderssonvivi/scs-thesis"
+            ]
+          ],
+          "sha1": "8ba2c71529e093ab04d8929e27a2defe1d32f372",
+          "md5": "aee107bd0886b7180d8d9e8797a9410c",
+          "sha256": "8b8dc98729149553a982f3ace176b72892a908263a4a25291aec7e073d938417"
+        },
+        {
+          "id": "github.com/goark/go-cvss:v1.6.6",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/anderssonvivi/scs-thesis"
+            ]
+          ],
+          "sha1": "f68927947da606cb4ab2a80a1bc897da74371a71",
+          "md5": "55b8ceb37856532ba6275ada0a764312",
+          "sha256": "224a8228302148c1663b9c19a6579842b26d8d00f8c40a8ddb853b7ef56928eb"
+        }
+      ]
+    }
+  ],
+  "started": "2024-02-16T16:40:28.596+0100"
+}
+viviandersson@ViviMac bin1 % ls
+geth
+viviandersson@ViviMac bin1 % bi go -h
+NAME:
+   Build-Info CLI go - Generate build-info for a Go project
+
+USAGE:
+   bi go
+
+OPTIONS:
+   --format    [Optional] Set to convert the build-info to a different format. Supported values are 'cyclonedx/xml' and 'cyclonedx/json'.
+   --help, -h  show help
+viviandersson@ViviMac bin1 % cd ~/go-ethereum/ 
+viviandersson@ViviMac go-ethereum % bi go            
+[Info] Running 'go list -mod=mod -m' in /Users/viviandersson/go-ethereum
+[Info] Running 'go mod graph' in /Users/viviandersson/go-ethereum
+[Info] Running 'go list -mod=mod -f {{with .Module}}{{.Path}}:{{.Version}}{{end}} all' in /Users/viviandersson/go-ethereum
+{
+  "name": "go-build",
+  "number": "1",
+  "agent": {},
+  "buildAgent": {
+    "name": "GENERIC"
+  },
+  "modules": [
+    {
+      "type": "go",
+      "id": "github.com/ethereum/go-ethereum",
+      "dependencies": [
+        {
+          "id": "github.com/google/gofuzz:v1.2.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "5c2865d40bd8711271b7052b8c051fbbe4ba8c07",
+          "md5": "b99efbe80baa3bbdbf03afae0b275b06",
+          "sha256": "5948f40af1923d8f98dc1d4191311030e40e0057fb255df19ebc0360f2faac16"
+        },
+        {
+          "id": "github.com/prometheus/common:v0.32.1",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/client_golang:v1.12.0",
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/client_golang:v1.12.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "5706dad194b4cc94738001555a55d5f074329693",
+          "md5": "d26bc3763911192965ae976333bcc282",
+          "sha256": "9630b9bbfcf1746a01c8aff0262271c60cf891fa1cd48a8ed9149de557dc98d6"
+        },
+        {
+          "id": "google.golang.org/protobuf:v1.27.1",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "fabe6981b12487c84334a98b3486a97e9233ed11",
+          "md5": "1f2a860d800f183b506c30311d9b5f90",
+          "sha256": "93180890add31a55b56d9c083a397c1dacc3571afa83981d0daa16f0afaf51d0"
+        },
+        {
+          "id": "github.com/cespare/xxhash/v2:v2.2.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/VictoriaMetrics/fastcache:v1.12.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "7186355384e8791e5f9dc1ee9c72fce63f26486c",
+          "md5": "1f43f0dbdc838cdf88539d864c16fb60",
+          "sha256": "fc180cdb0c00fbffbd39b774a72cdb5f0c32ace25370d5135195918a8c3fbd25"
+        },
+        {
+          "id": "github.com/mitchellh/pointerstructure:v1.2.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/hashicorp/go-bexpr:v0.1.10",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "f163aadbe96967aea965c2891a43a19ff9c3697c",
+          "md5": "d460a19bbd77728e5ff8d2845bcea54c",
+          "sha256": "6e1b9783cff20960279d710b5adb84d64ec37327e9361fd65ada71cd315c07d0"
+        },
+        {
+          "id": "github.com/mattn/go-runewidth:v0.0.13",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "3e194b93b7cb4774cee61ec23cb1e542b87093d4",
+          "md5": "7c4d5bc21d42e3b7f8af4a7c6c8b7586",
+          "sha256": "c104e14c1612a6d736bd109fe5fec9749a8146e1f7d37844d8a0a1296e00d4e9"
+        },
+        {
+          "id": "github.com/influxdata/influxdb1-client:v0.0.0-20220302092344-a9ab5670611c",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "cef47c17f7b924bfb2bd00a75f377df34a5bb745",
+          "md5": "07518857f1882e1ee38264375753a871",
+          "sha256": "71cde4d7b82c60edcecc528d44eac250071f9720e2e1d6ea279309a36e2a63e5"
+        },
+        {
+          "id": "github.com/btcsuite/btcd/btcec/v2:v2.2.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/status-im/keycard-go:v0.2.0",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "21d458540bb071b71f64aba864f65e60a76b2657",
+          "md5": "f06ac8c72be9fd6d55491962fa0297c6",
+          "sha256": "0baca2ccee8e811c62b4389d01c95d6fde207008a121a7ded61074d048655658"
+        },
+        {
+          "id": "github.com/hashicorp/go-bexpr:v0.1.10",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "83d4c541f8389fa7a12315770b5e6df691929be6",
+          "md5": "c7a9e6e03cb6f31cc9dade6054cf94c8",
+          "sha256": "66c8d79c85d490ee0b5269712079249f6dbb31b843a8eb93749314132d51890b"
+        },
+        {
+          "id": "github.com/protolambda/bls12-381-util:v0.0.0-20220416220906-d8552aa452c7",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "26fcf2d0e254e710e514fa9481b4284f4448087e",
+          "md5": "22fa0cc554a060ab33232ed5463aa7a2",
+          "sha256": "23ad35e2d00a570fbb23fb2a460e5b5c6dd85a80f98349639bbe2cbc22db2d57"
+        },
+        {
+          "id": "github.com/matttproud/golang_protobuf_extensions:v1.0.2-0.20181231171920-c182affec369",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "4f9c02feb8c413d0f3ffeee3540ed101a5cb6c16",
+          "md5": "95453c7ed35b2f8932566d4411781594",
+          "sha256": "232df417d378e10bb1dcdd533c493647a247f62d9fe2b13c636d9647ff13384a"
+        },
+        {
+          "id": "github.com/google/uuid:v1.3.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "bf472297d3f3530a4939db734b7bb5a798843a1d",
+          "md5": "3446af1657c44b0fd5a96af84f935808",
+          "sha256": "0a5fcc05ea492afeaca984a012485f6a15e2259b32f1206d6f36a88c88afc607"
+        },
+        {
+          "id": "github.com/deepmap/oapi-codegen:v1.6.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/influxdata/influxdb-client-go/v2:v2.4.0",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "c43c3beef621c302c033c4aaa83cdc07f6f0cd87",
+          "md5": "bfd610f22c8b63b933e10bae0a6203ac",
+          "sha256": "a89ac7cc533495fb5aa9caf2f763394af143928bf38a351495d93e220744dc4e"
+        },
+        {
+          "id": "github.com/naoina/go-stringutil:v0.1.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "3f7591b360b4e98b2f438a178a7d3acbf6075780",
+          "md5": "986a7cf9e4d5051e0f882a2011cfa390",
+          "sha256": "4cfea6f0ebfecb5e6297f8a6eee0e9ef9fe254883eb75dd6179133995a219c58"
+        },
+        {
+          "id": "github.com/aws/aws-sdk-go-v2/service/internal/presigned-url:v1.9.37",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "2cd9825fdadb66b7f0a9a5ee4df63599e87c6d5b",
+          "md5": "db3a102eff5267cf1d332d02aa457fac",
+          "sha256": "92ee24da4c89068d590f45dc16c4e1862746fba6ac487587b0d76e1a696588fc"
+        },
+        {
+          "id": "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "4735e69f35ed6e1b88ec000b500cd9088cbfdfdf",
+          "md5": "6d5718d90adb0b838e71e61590ac0162",
+          "sha256": "a2fd60e2625eaebf102c0f0fb81b6d63435a0cf866669adfd10ee18a7e11fc74"
+        },
+        {
+          "id": "github.com/cockroachdb/errors:v1.8.1",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "37910d1f081eacf6e59aad487706c5dd00cabd41",
+          "md5": "5da72c8020e0c16d5a8de1a7493e682f",
+          "sha256": "52552b154f458c03a5c514ccbacb21d7574e0a6d0428b63f16b9d6f7a655969b"
+        },
+        {
+          "id": "github.com/mattn/go-isatty:v0.0.17",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "ff1d44ebccff97dd15e45f0cf3c4d99f3ab0cb12",
+          "md5": "d501dbc274ecd4b48f420ff14ba12d42",
+          "sha256": "ed8a984a7931d618b677b6fd6bcc93c58bb57e67b4b3005c4012a8851b49428c"
+        },
+        {
+          "id": "rsc.io/tmplfunc:v0.0.3",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/crate-crypto/go-kzg-4844:v0.7.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/bavard:v0.1.13",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/bavard:v0.1.13",
+              "github.com/crate-crypto/go-kzg-4844:v0.7.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/bavard:v0.1.13",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/bavard:v0.1.13",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/bavard:v0.1.13",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/bavard:v0.1.13",
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/bavard:v0.1.13",
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/bavard:v0.1.13",
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/bavard:v0.1.13",
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "1d10e01adbf9f5f1c92f1494c7abd3d59b68bcd4",
+          "md5": "446d3d4c51f635b8463305da4a82ea5d",
+          "sha256": "c4ea1b4df379a9c802247283d5c344ef6c2bdf477018fb52c07e33b876b04189"
+        },
+        {
+          "id": "golang.org/x/sys:v0.16.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "6ee0c53fc86ed914d8bf1ea5d22f167b980306c4",
+          "md5": "3447b0bf82ae7f0fbdde1723a50412fe",
+          "sha256": "0175809134fc12e040ea427e927036692127f2891b72e224e5153da543af604a"
+        },
+        {
+          "id": "github.com/aws/smithy-go:v1.15.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/aws/aws-sdk-go-v2/feature/ec2/imds:v1.13.13",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/feature/ec2/imds:v1.13.13",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/internal/configsources:v1.1.43",
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/internal/configsources:v1.1.43",
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/internal/endpoints/v2:v2.4.37",
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/internal/endpoints/v2:v2.4.37",
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/internal/endpoints/v2:v2.4.37",
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/internal/endpoints/v2:v2.4.37",
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "ccb57b5cf4eaee275fdf420fb3dd02a40258e356",
+          "md5": "29d0bd4c8bd8a6c53cc304f20f151408",
+          "sha256": "7cd2c2db795542dd7ba6dc8a80e1ff78d183afe79eeb750a0b07b77660bdfdab"
+        },
+        {
+          "id": "github.com/naoina/toml:v0.1.2-0.20170918210437-9fafd6967416",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "7dc0977d1172b5decc9db2a50c1727ed7fd7ba49",
+          "md5": "b2bcb21139efd278f0450550337704c9",
+          "sha256": "f70300da0ce0159b875c315c4f0015cdb39fde93f70809b37f570408a6fb96c3"
+        },
+        {
+          "id": "github.com/influxdata/line-protocol:v0.0.0-20200327222509-2487e7298839",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/influxdata/influxdb-client-go/v2:v2.4.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "12b62f051e43d491b1faf6bde034c8d79bb83845",
+          "md5": "0a829d499fe9cfe0154e775b65e66fef",
+          "sha256": "5136447167086a6b8ac748f3d74b716940f87240342381c1ac64889a085127c1"
+        },
+        {
+          "id": "github.com/cockroachdb/tokenbucket:v0.0.0-20230807174530-cc333fc44b06",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "e27942331737465d7ad80f3dc62053dd4696b9dc",
+          "md5": "25690a274faf950f81db0f052ebb39b9",
+          "sha256": "150f3e8e5b515c0886cda0809f09b5d5173d7f2c30eb2f2c6045c2aeb2183aa3"
+        },
+        {
+          "id": "golang.org/x/exp:v0.0.0-20231110203233-9a3e6036ecaa",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "56e778139f9eea8eefb45d0320d86af8e68ae5ec",
+          "md5": "bee2df70fa0bc71410809ecee36f1f74",
+          "sha256": "3e3717f5151e8c2ebf267b4d53698b97847c0de144683c51b74ab7edf5039fa8"
+        },
+        {
+          "id": "github.com/go-sourcemap/sourcemap:v2.1.3+incompatible",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/dop251/goja:v0.0.0-20230806174421-c933cf95e127",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "c21f4d853862150951074db512eeae0c62b9ec71",
+          "md5": "7eda7b7bed820bf2095d90afb032fd6c",
+          "sha256": "fa2c40bbdd3ab3f45c4ced8c540e23575a11655932861fe262813279d7fc2654"
+        },
+        {
+          "id": "github.com/gogo/protobuf:v1.3.2",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "b968fee97e9438c5a4c6f614f3cee2d0603cc837",
+          "md5": "1ce863e6cf693b43c745c2e4f83765fb",
+          "sha256": "dd2b73f163c8183941626360196c8f844addd95423d341a0412e1b22d0104ff7"
+        },
+        {
+          "id": "github.com/deckarep/golang-set/v2:v2.1.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "f6496f9590d9f68300675c7dc1feac3da7bf4259",
+          "md5": "61bf1d8070eca0ce1ac07afdfa925120",
+          "sha256": "424aaec171c06e236fe64b728f62203e29fc3edd10bc974b0ef12f80d6924e12"
+        },
+        {
+          "id": "github.com/fatih/color:v1.13.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "9d1b9b5d66494748e0533a03c5cab5dd8fa97214",
+          "md5": "fd00925f3780c3d79d3ddd3b32aa2a27",
+          "sha256": "8f22a92816d9461b2ff967754d30e9bc8279d045af1b755854ebe765e84cab20"
+        },
+        {
+          "id": "github.com/cockroachdb/redact:v1.0.8",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cockroachdb/errors:v1.8.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cockroachdb/errors:v1.8.1",
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "8980e026fcff536bba2fc8982ee21767e507f1e8",
+          "md5": "21a9b8992a7e304598b6515eb60c4985",
+          "sha256": "2f583202b4c71b69102283e05b0528ace64ee7fde143c2260a4a4ec73a68e331"
+        },
+        {
+          "id": "github.com/gballet/go-libpcsclite:v0.0.0-20191108122812-4678299bea08",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "2de143353b16d82ee7c40ffaa00b56125515b3aa",
+          "md5": "c81cde9b738d342bf809899a22707512",
+          "sha256": "ce22ccb387269f83252b0ef36f1f9f8e8ab4e28139e76102b0afa8f0c676b57a"
+        },
+        {
+          "id": "github.com/pmezard/go-difflib:v1.0.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/azcore:v1.7.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/azcore:v1.7.0",
+              "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/internal:v1.3.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/internal:v1.3.0",
+              "github.com/Azure/azure-sdk-for-go/sdk/azcore:v1.7.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/internal:v1.3.0",
+              "github.com/Azure/azure-sdk-for-go/sdk/azcore:v1.7.0",
+              "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/internal:v1.3.0",
+              "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/stretchr/testify:v1.8.4",
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/crate-crypto/go-kzg-4844:v0.7.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "f200e2a5211b527ef2d2ff301718ccc4ad5c705b",
+          "md5": "fb72df530a7f3fca56ccc192c9f30a58",
+          "sha256": "de04cecc1a4b8d53e4357051026794bcbc54f2e6a260cfac508ce69d5d6457a0"
+        },
+        {
+          "id": "github.com/cockroachdb/sentry-go:v0.6.1-cockroachdb.2",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cockroachdb/errors:v1.8.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cockroachdb/errors:v1.8.1",
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "ee3be93e0bb37472af36d66bfa3be189f530362b",
+          "md5": "8a986e071ed334823569c7980058675c",
+          "sha256": "fbb2207d02aecfdd411b1357efe1192dbb827959e36b7cab7491731ac55935c9"
+        },
+        {
+          "id": "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "4e5e02e88b5a12811a27d91ef975aa72b3863c59",
+          "md5": "015d225622f0cf4d28f2a7cedb6273ec",
+          "sha256": "f5f6d8fb5630ac48458bf531eb9a01e5734855ce94f56723c7b040edcde7c3d8"
+        },
+        {
+          "id": "github.com/golang/protobuf:v1.5.3",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "08c40bfc08ec4500ed518ceea16b74b3cb723b05",
+          "md5": "ccf75c95f68509581705021bfa8a2a7e",
+          "sha256": "93bda6e88d4a0a493a98b481de67a10000a755d15f16a800b49a6b96d1bd6f81"
+        },
+        {
+          "id": "github.com/xrash/smetrics:v0.0.0-20201216005158-039620a65673",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/holiman/billy:v0.0.0-20230718173358-1c7e68d277a7",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/urfave/cli/v2:v2.25.7",
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/urfave/cli/v2:v2.25.7",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "79a771d85bf5b4df5b583c8435343b323f52995e",
+          "md5": "b5a17afb05c11c10713e33e390729bd7",
+          "sha256": "bbebb9a00f44ff3e27bec16111effdcf2706d727821a4833ec8da19aad96e26d"
+        },
+        {
+          "id": "golang.org/x/time:v0.3.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "7b3f9928194899aec8990ea5e84dd75d699a4c0e",
+          "md5": "83e02d4a6372d21a6eddc2b0ef8d9f24",
+          "sha256": "fa9a1fcd03a4acb817faa5d44e95f0a73182a96cb81012c9b94f832d70f7296b"
+        },
+        {
+          "id": "github.com/!victoria!metrics/fastcache:v1.12.1",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "bd3a3434c50e41ec83b1fe60332604d2cffbb099",
+          "md5": "4bd368d7f9abd25df00a21115458eabf",
+          "sha256": "281e3cbbd1c92680221eb9ca0c8e03a37e10e7cafdc0c47db7974fa48fa70d25"
+        },
+        {
+          "id": "github.com/prometheus/client_model:v0.2.1-0.20210607210712-147c58e9608a",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "374786eda79309b91e6413aea104f629e3e604d9",
+          "md5": "634fc6bc8a408ba118291f566a5a0cee",
+          "sha256": "44fc58fe25ed9b122b6755e8d356d5f199592f959af3b87a3b636c6eb82b43c5"
+        },
+        {
+          "id": "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "bb5091a6c030228df6e59a14d8f9349d81a2d957",
+          "md5": "fe2899f7b5259e74d649f6115ca1cbf5",
+          "sha256": "da3551c39e4c43564291b51281357a3c191bc84c17402ae5b8b0987c87645183"
+        },
+        {
+          "id": "github.com/opentracing/opentracing-go:v1.2.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "880b85d3c3b218b5876080533a78fdec20479f43",
+          "md5": "14d34b4bf41dbc762f4f7ac4be49fb39",
+          "sha256": "9b1a75e9a454a0cf01a26c18e48cd321e3b300943ac5adb9098ba033dbd40db5"
+        },
+        {
+          "id": "github.com/cloudflare/cloudflare-go:v0.79.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "a4a2ffb7ac5b7024433424f884bfc29356438f7d",
+          "md5": "f724ca60ac11a67c42f812136b6a1b5f",
+          "sha256": "d62b5236f99018ff93d2ccf83cb063f78c96af35b55890551743ee4b6c655196"
+        },
+        {
+          "id": "github.com/aws/aws-sdk-go-v2/service/route53:v1.30.2",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "e38ac43cfd2390d51f8d1f762dc060f7b4134c7a",
+          "md5": "b5d6a6b39feb72b5387a54e51464c098",
+          "sha256": "6e1124a243822907f3e6b0b5c53f214375fa1d05e1f0a5c180f9edd3310338ef"
+        },
+        {
+          "id": "github.com/ferranbt/fastssz:v0.1.2",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "a59d15d12d8d61a300552ab5a146880de7c5ea1b",
+          "md5": "36841a0ed0f8f1b49c3d1b9ac968a1d3",
+          "sha256": "6eba231361918713b7fb5bcf4290bd5bdfa374a61a69a0d87f8c1cd1bd7ced90"
+        },
+        {
+          "id": "golang.org/x/crypto:v0.17.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "58623b9d03761221cb9cd4901da96c44952e05d1",
+          "md5": "d3f6450a48175e40e5fe9a7a39399e54",
+          "sha256": "97ea91df712ac1ca39c122480489be532b437bf4aeb5d781465cb1cf39824083"
+        },
+        {
+          "id": "github.com/google/go-querystring:v1.1.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "3a32d5f0d6db2d32e4184bf9247bf91e60aaae5f",
+          "md5": "ad823c2971d7346c5c62fc8fcbbe91fe",
+          "sha256": "a6aafc01f5602e6177928751074e325792a654e1d92f0e238b8e8739656dd72b"
+        },
+        {
+          "id": "github.com/rs/cors:v1.7.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "ce190b5fa15ce97bf42d1163854723c098953dca",
+          "md5": "562543f2f6f8cc1c91784c97ef78797c",
+          "sha256": "67815316761fddc4acfaad852965cf04ec88674abe3a05c6c332519556c55855"
+        },
+        {
+          "id": "gopkg.in/yaml.v3:v3.0.1",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/crate-crypto/go-kzg-4844:v0.7.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/status-im/keycard-go:v0.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/stretchr/testify:v1.8.4",
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/stretchr/testify:v1.8.4",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/urfave/cli/v2:v2.25.7",
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/urfave/cli/v2:v2.25.7",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "go.uber.org/automaxprocs:v1.5.2",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "65825246447882d6f2bddb3f89ac4b9abc2612ef",
+          "md5": "292e318d64256fb05395c45c176c94c2",
+          "sha256": "aab8fbc4e6300ea08e6afe1caea18a21c90c79f489f52c53e2f20431f1a9a015"
+        },
+        {
+          "id": "github.com/influxdata/influxdb-client-go/v2:v2.4.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "3ab47d7605fdd70ff5b0fce990785456ccb78105",
+          "md5": "91c4bd166a33be23ab5f598ad34cd0b9",
+          "sha256": "1a84af9a022118999f3a350a860e811952776e714539e0125bfc8ef67871331f"
+        },
+        {
+          "id": "github.com/holiman/billy:v0.0.0-20230718173358-1c7e68d277a7",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "c1587ebc2a56d58d893ca92e7cbc2c2a9e39ba42",
+          "md5": "158dc5bc8ea9c0dc9b391a1782963792",
+          "sha256": "d690763425a13ad9de0ef7213e96eb065fba5bd7725d41ae3f80e43eb1bd7484"
+        },
+        {
+          "id": "github.com/olekukonko/tablewriter:v0.0.5",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "2c485e8c7bbabfde52d53702a82c7b7e30780dc9",
+          "md5": "f25db07865c2464edd0947743674ec47",
+          "sha256": "ba678c0fddd0645293afc2ac50a5943730d755e31059f588f4b4a8c581b65dad"
+        },
+        {
+          "id": "github.com/stretchr/testify:v1.8.4",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "874d98aac38304b0ac3e046475fb39f11219d5c0",
+          "md5": "7bbb2058ef66c6829ebd3b652aff5296",
+          "sha256": "e206daaede0bd03de060bdfbeb984ac2c49b83058753fffc93fe0c220ea87532"
+        },
+        {
+          "id": "github.com/graph-gophers/graphql-go:v1.3.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "1295421c0a3d7e2608de3ef1a6087873aa21a4a7",
+          "md5": "08c1895afddd14fc2067613f31c35896",
+          "sha256": "bde9e1fa01f556932b6be56f71e5736ce68a37549d2b8624a91e0adad92f4201"
+        },
+        {
+          "id": "github.com/hashicorp/go-cleanhttp:v0.5.2",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/hashicorp/go-retryablehttp:v0.7.4",
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/hashicorp/go-retryablehttp:v0.7.4",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "8b720cc769f0acd8b7d50f52972de5dcbc308b9a",
+          "md5": "d805b5879ad198fd92f7483e18432a71",
+          "sha256": "e9f3dcfcb33172ba499b4f8e888169252d7f1e072082182124a6e2053523f7df"
+        },
+        {
+          "id": "golang.org/x/tools:v0.15.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "golang.org/x/exp:v0.0.0-20231110203233-9a3e6036ecaa",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "779ce63f848fd877fffd53b69268fc9aadfe4b0f",
+          "md5": "83e5eb20103a6d1531658c349d45c43f",
+          "sha256": "5cdd3e8b6d805e11c63e8a0262050cd6eac9b0c51bd9b35cd82d5f309d290c70"
+        },
+        {
+          "id": "github.com/dop251/goja:v0.0.0-20230806174421-c933cf95e127",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "2e46254d8f3f5a5335e5ef2316db539c4cfdae2d",
+          "md5": "ef66fa48e466b9d3d2c28ae07fcfb179",
+          "sha256": "2e50a202cd97cf104177604ed8c25d2f6be34e8a970d9d38968fda7fab6b0e34"
+        },
+        {
+          "id": "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "8f312b2028ca6ed830150a783c7fe07b620b0686",
+          "md5": "c8627240d9dfba2175138b0f58ba397b",
+          "sha256": "225bfb31d3073d22621bee22f75acc4e75882075c4ac14c864c89db408a72a9a"
+        },
+        {
+          "id": "github.com/golang/snappy:v0.0.5-0.20220116011046-fa5810519dcb",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "9b924a027a1dfc400330ce122df4eaf88b6aa419",
+          "md5": "361174e8773e2b732b6266efef5e79d0",
+          "sha256": "c7e85560ba66f437dbf7d7f45c9080be557f84b77e09d5efd5fbd49e824a8bdc"
+        },
+        {
+          "id": "golang.org/x/net:v0.18.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "golang.org/x/tools:v0.15.0",
+              "golang.org/x/exp:v0.0.0-20231110203233-9a3e6036ecaa",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "golang.org/x/tools:v0.15.0",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "9c5dffbc67a55f035700fa1fab9b4a69173fac8f",
+          "md5": "0013523b49c9021842eedde29f5e17ff",
+          "sha256": "4cab2282ffbcfc8cceed657567a5fcf11e735312d1865f953fae62bbf1307a7a"
+        },
+        {
+          "id": "github.com/fsnotify/fsnotify:v1.6.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "e89261360f7fa3e8cc1036455e7c2f7cefe8e32a",
+          "md5": "b20caf7bd771ec82155b77a0efb93fc9",
+          "sha256": "7d4408f12ffc38106e358244446851a28077ed80e3c0940e98e0e332b3ed43ab"
+        },
+        {
+          "id": "github.com/beorn7/perks:v1.0.1",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/client_golang:v1.12.0",
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/client_golang:v1.12.0",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "cbad5ce8dd349bfee748ba5a8e1bc3c8605db9ff",
+          "md5": "888c0f749469cb6c42d5c1695e1decec",
+          "sha256": "25bd9e2d94aca770e6dbc1f53725f84f6af4432f631d35dd2c46f96ef0512f1a"
+        },
+        {
+          "id": "github.com/kr/text:v0.2.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/kr/pretty:v0.3.1",
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/kr/pretty:v0.3.1",
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/kr/pretty:v0.3.1",
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/kr/pretty:v0.3.1",
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/kr/pretty:v0.3.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "7d227e9c9516bd2a9617dfec9b150df1cc8d2ef3",
+          "md5": "52630c25195715aa3b747ed34c8c1536",
+          "sha256": "368eb318f91a5b67be905c47032ab5c31a1d49a97848b1011a0d0a2122b30ba4"
+        },
+        {
+          "id": "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "bef768ab1c196fa1c8a08f4637e7b8dc9f03d8a2",
+          "md5": "42ffa9129c9407c4f12acaf560ba7303",
+          "sha256": "86cdbbb2dd698245ce00176ddb783a11b6dbb7b8abc0859dc7ee797756888e8a"
+        },
+        {
+          "id": "github.com/cespare/cp:v1.1.1",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "2a64553f14b83acec010411931d3d33d47eb5b85",
+          "md5": "192eca99d15868779936d38cd01acea6",
+          "sha256": "25f2ed5bac9ac3c1891ff364b213f6b7b0ee2e7aed13510738ced93ea71860e3"
+        },
+        {
+          "id": "github.com/golang-jwt/jwt/v4:v4.5.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "fc7bb1c2fec3b1ee986d251f897475666b4e6d16",
+          "md5": "5b5fce65982ef58c82179377913de9d1",
+          "sha256": "fdb3b9c078eba9a2bd437c1b3acdf98ee09d276121a97b4bc7f6d870eb5ff75b"
+        },
+        {
+          "id": "github.com/consensys/gnark-crypto:v0.12.1",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "72da59983ab6ffb7d7183daaa28c6ad8e58fbafb",
+          "md5": "63deb043a75a2a57b53de10f77db443d",
+          "sha256": "cff9e84061e8241579b853e85e599dd18438d2c2b6643a604b6d4de02703daf4"
+        },
+        {
+          "id": "github.com/urfave/cli/v2:v2.25.7",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "c93f96a6feceef906da4bdb4d337ad5fa9e5048d",
+          "md5": "b5bbdbfb52f8f83b451200a216b6d504",
+          "sha256": "10941b24689d7c953a78b6d196a03e04274e012d27d4f297fe844cf58221a86c"
+        },
+        {
+          "id": "github.com/jedisct1/go-minisign:v0.0.0-20230811132847-661be99b8267",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "059ca86729b6127789a5122e7aa2edb742ed3842",
+          "md5": "4399fd2c520a99c2ea6adc2e6e7ff8b1",
+          "sha256": "5c8c88dd60cd9c2214a38f5ce42d39c05aafb58a92909c2bc1f49e430d59b1d5"
+        },
+        {
+          "id": "github.com/mattn/go-colorable:v0.1.13",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "137defbc8e6c001fa5a26489664cb0675452c971",
+          "md5": "3cff6e3b982c54ec48daeabeda9ab312",
+          "sha256": "08be322dcc584a9fcfde5caf0cf878b4e11cd98f252e32bc704e92c5a4ba9d15"
+        },
+        {
+          "id": "github.com/jmespath/go-jmespath:v0.4.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/aws/smithy-go:v1.15.0",
+              "github.com/aws/aws-sdk-go-v2/feature/ec2/imds:v1.13.13",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/smithy-go:v1.15.0",
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/smithy-go:v1.15.0",
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/smithy-go:v1.15.0",
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/smithy-go:v1.15.0",
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/feature/ec2/imds:v1.13.13",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/smithy-go:v1.15.0",
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/smithy-go:v1.15.0",
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/internal/configsources:v1.1.43",
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/smithy-go:v1.15.0",
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/internal/endpoints/v2:v2.4.37",
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/feature/ec2/imds:v1.13.13",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/internal/configsources:v1.1.43",
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2:v1.21.2",
+              "github.com/aws/aws-sdk-go-v2/internal/endpoints/v2:v2.4.37",
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "a16ea5e53967e51660a9ae3318ff411b1425625e",
+          "md5": "663220d3870c48f5741dde01390855e8",
+          "sha256": "d1f77b6790d7c4321a74260f3675683d3ac06b0a614b5f83e870beae0a8b2867"
+        },
+        {
+          "id": "github.com/mmcloughlin/addchain:v0.4.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/crate-crypto/go-kzg-4844:v0.7.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "2658bfb8ab592766c98e7f9bcb6cf325375b3fa3",
+          "md5": "aa26c65d0996b4a5c5ea0e098fb7cacd",
+          "sha256": "d780c169bb88f372c8e43c69976cd014bfce952e60e5df27e82f263884f1ab1d"
+        },
+        {
+          "id": "github.com/jackpal/go-nat-pmp:v1.0.2",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "334dfc09a8bc9b26f7d7d98710a0b9c1261c1ee7",
+          "md5": "6af7e3fe71830ad9badcebed508fb5ba",
+          "sha256": "f778f0f492597d7158e2d6abbac3850bdf8a669c296790eba85c95152872ddfb"
+        },
+        {
+          "id": "github.com/rivo/uniseg:v0.2.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/mattn/go-runewidth:v0.0.13",
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/mattn/go-runewidth:v0.0.13",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "0b0e429a0f13b289e6babd40ddf2fb688ff93814",
+          "md5": "0f4743b9b209a67b384286cdac317282",
+          "sha256": "3199d94be50284142220662ca3b00e19ddd1debe4e80ddc745ff4203ecb601c0"
+        },
+        {
+          "id": "gopkg.in/yaml.v2:v2.4.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/internal:v1.3.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/internal:v1.3.0",
+              "github.com/Azure/azure-sdk-for-go/sdk/azcore:v1.7.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/internal:v1.3.0",
+              "github.com/Azure/azure-sdk-for-go/sdk/azcore:v1.7.0",
+              "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/internal:v1.3.0",
+              "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/crate-crypto/go-kzg-4844:v0.7.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/dop251/goja:v0.0.0-20230806174421-c933cf95e127",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/common:v0.32.1",
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/common:v0.32.1",
+              "github.com/prometheus/client_golang:v1.12.0",
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/common:v0.32.1",
+              "github.com/prometheus/client_golang:v1.12.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/common:v0.32.1",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "3d57a110877ea3130ef52f9af555744a35600fc5",
+          "md5": "dea2ac89d204090adec5232d4d8a3ce5",
+          "sha256": "ede49e27c4cca6cdd2ec719aed8ea4d363710cceb3d411e7a786fbdec0d391fd"
+        },
+        {
+          "id": "github.com/holiman/uint256:v1.2.4",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "0f122d50fb95e090b1f9e7cbfcd7a7aae34e8361",
+          "md5": "b6792dc4cb4e8d2c937e072922c1e748",
+          "sha256": "5b2b8e3f8f75e4a9d56a567d56bd8199f3bdd94230468406068e665882aff6ba"
+        },
+        {
+          "id": "github.com/gorilla/websocket:v1.4.2",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "cf7df883bc2fb39bf7231d48736d9efe9564749c",
+          "md5": "c7ac562777881f89fd80e31ce8e98214",
+          "sha256": "d0d1728deaa06dac190bf4964c9c6395923403eae337cb3305d6dda18ef07337"
+        },
+        {
+          "id": "github.com/fjl/memsize:v0.0.2",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "b16c37ae2d23c3086f77cbf807c265bfdd319c8e",
+          "md5": "33f8723f640f05be78603f769a56a4df",
+          "sha256": "e69e736e4cf4dc1fb39be9c4f477cac981639ab3f8f9c253008580d3b62b4010"
+        },
+        {
+          "id": "github.com/prometheus/procfs:v0.7.3",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/client_golang:v1.12.0",
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/client_golang:v1.12.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "a0bbb56e999527f7ba2863b6bc8b7d3e7f273603",
+          "md5": "73f1cd7672088a921058b5296ca9bbaf",
+          "sha256": "3e37c9f62738a493dd28283179d802749050353df0bca161df7cec4ed43e6f1a"
+        },
+        {
+          "id": "github.com/pkg/errors:v0.9.1",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cockroachdb/errors:v1.8.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cockroachdb/errors:v1.8.1",
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/influxdata/influxdb-client-go/v2:v2.4.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/common:v0.32.1",
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/common:v0.32.1",
+              "github.com/prometheus/client_golang:v1.12.0",
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/common:v0.32.1",
+              "github.com/prometheus/client_golang:v1.12.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/common:v0.32.1",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "6ac37cf1eab63f464a8ec2d20bc7224271528d7d",
+          "md5": "5d8002959a144c1bea1f86228fe09755",
+          "sha256": "d4c36b8bcd0616290a3913215e0f53b931bd6e00670596f2960df1b44af2bd07"
+        },
+        {
+          "id": "github.com/russross/blackfriday/v2:v2.1.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/holiman/billy:v0.0.0-20230718173358-1c7e68d277a7",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cpuguy83/go-md2man/v2:v2.0.2",
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cpuguy83/go-md2man/v2:v2.0.2",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cpuguy83/go-md2man/v2:v2.0.2",
+              "github.com/holiman/billy:v0.0.0-20230718173358-1c7e68d277a7",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cpuguy83/go-md2man/v2:v2.0.2",
+              "github.com/urfave/cli/v2:v2.25.7",
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cpuguy83/go-md2man/v2:v2.0.2",
+              "github.com/urfave/cli/v2:v2.25.7",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/urfave/cli/v2:v2.25.7",
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/urfave/cli/v2:v2.25.7",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "b733cda2c795193ad2a65e13dcd7529b93bf04e9",
+          "md5": "eea4411c54002a5fb7d0db351270eefe",
+          "sha256": "7852750d58a053ce38b01f2c203208817564f552ebf371b2b630081d7004c6ae"
+        },
+        {
+          "id": "github.com/tklauser/go-sysconf:v0.3.12",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "f9c57fb4d7482087437d378c0eb5419c7e1e4e62",
+          "md5": "363b49a8c012496704752e7e5ba55905",
+          "sha256": "95a4a24b6f5fc5af05d94bbab39ff847a220d30c5adb4fb0a09f9c7926a2ffe8"
+        },
+        {
+          "id": "golang.org/x/mod:v0.14.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "golang.org/x/exp:v0.0.0-20231110203233-9a3e6036ecaa",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "golang.org/x/tools:v0.15.0",
+              "golang.org/x/exp:v0.0.0-20231110203233-9a3e6036ecaa",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "golang.org/x/tools:v0.15.0",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "a4f78f4d545c2a92c4026d8d28b37b258bd90967",
+          "md5": "b0ef756b3a97c5a1aee6fb1d754ca329",
+          "sha256": "98a122c92ad55deef674f6546b4c295ed93d106178dd24ec40449ae33b41037a"
+        },
+        {
+          "id": "github.com/karalabe/usb:v0.0.2",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "00ab2243469a58aec41692fd4381fd7a79e33cf2",
+          "md5": "a52a789132185b327956d16e9633c282",
+          "sha256": "1235b70c2695a88fd395dfa345e1aa35e6050748d3194e7046679c356bc949d4"
+        },
+        {
+          "id": "github.com/cockroachdb/logtags:v0.0.0-20190617123548-eb05cc24525f",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cockroachdb/errors:v1.8.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cockroachdb/errors:v1.8.1",
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "64d6aeb77496ce0e8c8ac83b0525c57f17f4877b",
+          "md5": "8a283a9fed2dcdee874dbf496b61abee",
+          "sha256": "e0ff78268deed42414d58c55115e2a7db8d6b76f4165c02d8ba40d6cd32495a1"
+        },
+        {
+          "id": "github.com/minio/sha256-simd:v1.0.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ferranbt/fastssz:v0.1.2",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "4436e73434d4cdf7f8c15e13c16d6e2bbe09a986",
+          "md5": "692032db5176421a70aa97c7916e3b9a",
+          "sha256": "62edc1481390c3421ff5a54b80c49acab85331348124d560a5e410074d19c3e5"
+        },
+        {
+          "id": "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "dd06511e2f9ad112c31733143f11740ba95e9fbd",
+          "md5": "d6345b2a0547c33940447a6b36944d78",
+          "sha256": "255079006a0ec28f0bb1725bafabc805f9f6d1c5906337e2cdce48f0df0ead4b"
+        },
+        {
+          "id": "github.com/cpuguy83/go-md2man/v2:v2.0.2",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/holiman/billy:v0.0.0-20230718173358-1c7e68d277a7",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/urfave/cli/v2:v2.25.7",
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/urfave/cli/v2:v2.25.7",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "cab8c09415bb3aa49892aac866a2732980d44c95",
+          "md5": "86a066c9aaad807da54f481b8286f8ce",
+          "sha256": "70a7e609809cf2a92c5535104db5eb82d75c54bfcfed2d224e87dd2fd9729f62"
+        },
+        {
+          "id": "github.com/dlclark/regexp2:v1.7.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/dop251/goja:v0.0.0-20230806174421-c933cf95e127",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "1fdf77811f8875c576b9323f01e53e43512299dd",
+          "md5": "b468feef087690aa87bb87f7c37e4001",
+          "sha256": "6c55f7f0e980cb90d8f88ebead82dcdfd7452a7ee02147a2134c1768f8b1f800"
+        },
+        {
+          "id": "github.com/rogpeppe/go-internal:v1.9.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/kr/pretty:v0.3.1",
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/kr/pretty:v0.3.1",
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/kr/pretty:v0.3.1",
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/kr/pretty:v0.3.1",
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/kr/pretty:v0.3.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "f86e9ad3bcb6a1d6b6ac4d22e3af416744b2643e",
+          "md5": "f85cda8e63b654a44240b691cd607670",
+          "sha256": "7d777908b9c91a1685f2d709550e6b7478e14e9c4699dffd7f0a150e36dbc7e9"
+        },
+        {
+          "id": "github.com/klauspost/cpuid/v2:v2.0.9",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ferranbt/fastssz:v0.1.2",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "7cecd24c64187c66fa41e599977b7fa4b5d58ac9",
+          "md5": "39f91e429b47af7b467918a55000051f",
+          "sha256": "52c716413296dce2b1698c6cdbc4c53927ce4aee2a60980daf9672e6b6a3b4cb"
+        },
+        {
+          "id": "github.com/aws/aws-sdk-go-v2/feature/ec2/imds:v1.13.13",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "86fe7245a9855b9b0a055fd892a38408590d064b",
+          "md5": "8fdc20f0db2fb12f1474a4413a3e3fe2",
+          "sha256": "2a1b665d4e52ba4e3fd230f7f4e99ec4bfbc29753d1a8a73b94141ad294d43a5"
+        },
+        {
+          "id": "github.com/kilic/bls12-381:v0.1.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/protolambda/bls12-381-util:v0.0.0-20220416220906-d8552aa452c7",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "c8bdd8e4c5f9541b47693dd2cdc131a16ad5a789",
+          "md5": "c76aec7394eab2feb5ea01e1b140ba8f",
+          "sha256": "2bfa823d2edc6b655479605c001044d3119eaddbe7acb181ec63363f8a6f8471"
+        },
+        {
+          "id": "github.com/supranational/blst:v0.3.11",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "d1bb612a5fd58cfa21163a4f6360596c86b06f28",
+          "md5": "61efa2d11e60f80f13f75d908c62edf5",
+          "sha256": "3320ec3224c725bcd64efc4d243bb8984c6d57f6020473ace83af29188a9e996"
+        },
+        {
+          "id": "github.com/consensys/bavard:v0.1.13",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/crate-crypto/go-kzg-4844:v0.7.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "8a354bff4666bf378f02de66f6ba6a074084ba41",
+          "md5": "aaeca5b16f09a941253786e6611ef9a3",
+          "sha256": "9571a72c9edd7e40d05aef9bacaba77a31b5eab5b1a7a73f03cd8c51005f5a6e"
+        },
+        {
+          "id": "github.com/tyler-smith/go-bip39:v1.1.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "d4501ccaf82cf33efefebbf514ce2165b5e6aee8",
+          "md5": "64ab0d30911f4fd8a2d4b36b0a660cb1",
+          "sha256": "418226d3b0e8c7b1c869beb473d0d61445d9d9d3259e6fecb19aa94dc8898a3e"
+        },
+        {
+          "id": "github.com/goccy/go-json:v0.10.2",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "2d845cf86881b7e7569bd266d34c925381ffe7ad",
+          "md5": "21a114a7a0fa6657bbe880f6de6d61a2",
+          "sha256": "ed9043ee01cc46557c74bcecc625db37ffe3a5c7af219f390a287f44a40c2520"
+        },
+        {
+          "id": "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "8aa3d7978ac15dfea2b052aaeba263377f0519ff",
+          "md5": "b09b6b42120650bb5e57d2fb6ce016e6",
+          "sha256": "6469b78bdb7f2e25411b0bd5edca6ec6f81322a4933050d4a5359a4e32930545"
+        },
+        {
+          "id": "github.com/syndtr/goleveldb:v1.0.1-0.20210819022825-2ae1ddf74ef7",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "001ca5e2af7dbcf117cbc682183c3c74292dd2b3",
+          "md5": "ff7588d7ba1dbb0085f68fd744e2b02f",
+          "sha256": "27a3ccd9769cc0df353edf9f2baec88a6fac82c766e317b1c697d06c1654052c"
+        },
+        {
+          "id": "go.uber.org/automaxprocs:v1.5.2",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "38ec271f8cacd86b9feeba7668deafdb62453d57",
+          "md5": "90ac43db2dedb8843d488f0dae333561",
+          "sha256": "7b9a76ea33ef5378c8a86587570ef4baa381466a022e64ad6ccadacbb59ff2f2"
+        },
+        {
+          "id": "github.com/aws/aws-sdk-go-v2:v1.21.2",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/internal/configsources:v1.1.43",
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/internal/configsources:v1.1.43",
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/internal/configsources:v1.1.43",
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/internal/endpoints/v2:v2.4.37",
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/internal/endpoints/v2:v2.4.37",
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/internal/endpoints/v2:v2.4.37",
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/internal/presigned-url:v1.9.37",
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/feature/ec2/imds:v1.13.13",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/feature/ec2/imds:v1.13.13",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "2b33f797aa0e495743df108a0f13d50442142db8",
+          "md5": "7bf92132bbd71aad6401f280c3f4707b",
+          "sha256": "80ba1007c0eae48303e7273e1b59b0b533282bc29d9d17ead1edab3e2b7bbb8a"
+        },
+        {
+          "id": "gopkg.in/natefinch/lumberjack.v2:v2.0.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "20767a2f5b3627c19476fc24c4d942c6ee707e91",
+          "md5": "8a4f0d9ec3929071a0bb0664e419ebf4",
+          "sha256": "8c268e36660d6ce36af808d74b9be80207c05463679703e93d857e954c637aaa"
+        },
+        {
+          "id": "github.com/mitchellh/mapstructure:v1.4.1",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/mitchellh/pointerstructure:v1.2.0",
+              "github.com/hashicorp/go-bexpr:v0.1.10",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/mitchellh/pointerstructure:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "91f0f58e0cc95b4767918f8f0c5a0c0a8b6462e2",
+          "md5": "c69673304fead1bda37f6dac9a9d532f",
+          "sha256": "bfe856861145c25f6f26c2985760e86a4634e2a28bb9b4582ff0e8a9d2621e10"
+        },
+        {
+          "id": "github.com/aws/aws-sdk-go-v2/internal/endpoints/v2:v2.4.37",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/route53:v1.30.2",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "b39a0226363093450bed8b49bf050a13d606dcdc",
+          "md5": "fba157c549069551ea913604c05fd23f",
+          "sha256": "c3ab57528dc157b13b25725bfaf247ab2c71234ca80b94e2b132167834b64f53"
+        },
+        {
+          "id": "github.com/!azure/azure-sdk-for-go/sdk/azcore:v1.7.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "9bb7365dd9273285608e2926c4068c246d6fc783",
+          "md5": "1777502423ec2714ab0dcb40653679f3",
+          "sha256": "0d5c166593253b16ab321a74ae37401d4ccef5aa1cdc83dbf0c3ea4b57219c84"
+        },
+        {
+          "id": "github.com/crate-crypto/go-kzg-4844:v0.7.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "1cddfae557b6d19267c2f8dbf9e50d0866caa8e6",
+          "md5": "9ceade3f084287919236fbe7de21474d",
+          "sha256": "cbaabe45b62b9b7262a7ccae7e88554773963f04f5e87250496dce17d1884898"
+        },
+        {
+          "id": "golang.org/x/sync:v0.5.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "golang.org/x/tools:v0.15.0",
+              "golang.org/x/exp:v0.0.0-20231110203233-9a3e6036ecaa",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "golang.org/x/tools:v0.15.0",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "82382af305eea8b997c8b0a5ab7092efea79ed16",
+          "md5": "74b9dcf0430f5de05ba78590d658fa28",
+          "sha256": "9e094c65b153881437ce230b2d2492719d063c8924009631c9025add13056922"
+        },
+        {
+          "id": "github.com/!azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "c750f03ad5097f07d140dc2bd6bbbe9ba4f540cb",
+          "md5": "0df64a18c880442d2223b2855f3d5c36",
+          "sha256": "fb1af61d2a9c3437176977d6ec2ec14158240fc8ee867df28e88b462aa890b40"
+        },
+        {
+          "id": "github.com/bits-and-blooms/bitset:v1.10.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "bfe1e25f2d5cfa419243ae3dbd2cc099bfaffa92",
+          "md5": "aeb7508762470d1e0de1aa5011998bd9",
+          "sha256": "b636514bfb66e65360dee3d842714ecaccae4bc4b2a5a1de5df57c866015e3ec"
+        },
+        {
+          "id": "github.com/kr/pretty:v0.3.1",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "955b2860228503673cd908244a6b77b034e929ae",
+          "md5": "fc32404d2cabbbf2e6893b81f8e1c53d",
+          "sha256": "ecf5a4af24826c3ad758ce06410ca08e2d58e4d95053be3b9dde2e14852c0cdc"
+        },
+        {
+          "id": "github.com/decred/dcrd/dcrec/secp256k1/v4:v4.0.1",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/btcsuite/btcd/btcec/v2:v2.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/btcsuite/btcd/btcec/v2:v2.2.0",
+              "github.com/status-im/keycard-go:v0.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/status-im/keycard-go:v0.2.0",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "f98bf93bf18e0d6290d0fba1db0d10209cde83fe",
+          "md5": "67964dd58093346dd898bcf377d3c8b5",
+          "sha256": "226f17b34dc3d6e1223470de67785d8d2a95778caabbfa1b71fe85b50948767a"
+        },
+        {
+          "id": "github.com/aws/aws-sdk-go-v2/internal/configsources:v1.1.43",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/route53:v1.30.2",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sso:v1.15.2",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/ssooidc:v1.17.3",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/aws/aws-sdk-go-v2/credentials:v1.13.43",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/aws/aws-sdk-go-v2/service/sts:v1.23.2",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "8983c08a97b0d45dcd925300aea542b64b2844ae",
+          "md5": "4ab5f6ff2da029aea78eaabfef694347",
+          "sha256": "d6d9b4ba12419527c809120a31a561c4b23ec134a28063041a2063b7ef0b6efd"
+        },
+        {
+          "id": "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "34fcc71fe4b7397001a7c96de17e04d8260cb065",
+          "md5": "2805c74da3958fd053f6a04211e9d41d",
+          "sha256": "8ccedcdfad5786210562fbbc1c8604a910f43c611fc4245d9bc569a493914c79"
+        },
+        {
+          "id": "github.com/peterh/liner:v1.2.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "69bd053de7a60e04f224a3a3d59ed8eb51d15650",
+          "md5": "0385cd2760a3c14f55305d97e9904c9f",
+          "sha256": "d1389020dc415d9a7ffbbf6374ad2bb22abaec772ad6abb0cc143b8833306e67"
+        },
+        {
+          "id": "github.com/prometheus/client_golang:v1.12.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "1b8763f252126c5b50ac9cacf8f48654ee8c4fcd",
+          "md5": "69d1d18aa57d78287946918a750212b6",
+          "sha256": "9776139bdb0080e048ddad860ba49e9cca0f7b7736ab219ca0d69da4900d830d"
+        },
+        {
+          "id": "github.com/aws/aws-sdk-go-v2/internal/ini:v1.3.45",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/aws/aws-sdk-go-v2/config:v1.18.45",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "ee5cfb893590e64c8a1c7486d0bb1ca715725f5f",
+          "md5": "0a7f89ebbebf8d6ae581d72c5ff0282c",
+          "sha256": "cfa3feaf198e78aa6d3ba55549f4e0dce9b584fc808b2f3c9ed0726e4fdfd14d"
+        },
+        {
+          "id": "github.com/gofrs/flock:v0.8.1",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "7bb9997918283575e08e959ee20dda2a8b6630b2",
+          "md5": "fc839ad7d024da888cddbbfc8addeec8",
+          "sha256": "9ace5b0a05672937904fba1fcb86cb45e7f701e508faeb5f612e243340351dfa"
+        },
+        {
+          "id": "github.com/!azure/azure-sdk-for-go/sdk/internal:v1.3.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/azcore:v1.7.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/azcore:v1.7.0",
+              "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "736b140afa3bd2a68dedb2c188ec3f50402f3d5c",
+          "md5": "910637a702e573332e32549eaf1db92b",
+          "sha256": "94617f0ed66bf541976b2360c5689bfb54e03e544adb4d1fe1e03e297b66b64b"
+        },
+        {
+          "id": "github.com/!data!dog/zstd:v1.4.5",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "68069496c70852949a43fa3aab9ac7e290cf8478",
+          "md5": "a631762146d9e55db664f40722c01050",
+          "sha256": "0a4ae14405084422c64e0bf5372e85f5975601438c41e6d6786f03fdf9223e62"
+        },
+        {
+          "id": "github.com/google/pprof:v0.0.0-20230207041349-798e818bf904",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/dop251/goja:v0.0.0-20230806174421-c933cf95e127",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "0ee6dc633da6f620cffb8b4812baf085db4d79df",
+          "md5": "8872ec16b545a8b079fa7ae9824d869a",
+          "sha256": "136415c25b435c9764189c54967a40c9bc2af9fb444bbf5e79e4aa3cfe925a32"
+        },
+        {
+          "id": "github.com/status-im/keycard-go:v0.2.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "8ea3694a17198855bf82c60d8e8108ab60dbef42",
+          "md5": "7f3ebf6980ec1c4a4c0ff0d7abc38958",
+          "sha256": "39eed9f5679c9916d6c882e7d60008cea90b3a095f6ac1e80557ebaf482db4d3"
+        },
+        {
+          "id": "github.com/julienschmidt/httprouter:v1.3.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/common:v0.32.1",
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/common:v0.32.1",
+              "github.com/prometheus/client_golang:v1.12.0",
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/common:v0.32.1",
+              "github.com/prometheus/client_golang:v1.12.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/prometheus/common:v0.32.1",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "c0da90dd3933a12dd5ff7299d62c1e1aed25c1d5",
+          "md5": "89bd4080c03a866d72c4c9952f5d5524",
+          "sha256": "e457dccd7015f340664e3b8cfd41997471382da2f4a743ee55be539abc6ca1f9"
+        },
+        {
+          "id": "github.com/shirou/gopsutil:v3.21.4-0.20210419000835-c7a38de76ee5+incompatible",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "377e451b89953f610659f91bc265cae6a1617451",
+          "md5": "77d21150e18d564956b261086daddd4c",
+          "sha256": "eebe861c6e48a67e6fe465e57ed791eb4de44607eedc90a4d4a6041af4976113"
+        },
+        {
+          "id": "golang.org/x/text:v0.14.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "golang.org/x/crypto:v0.17.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "golang.org/x/net:v0.18.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "golang.org/x/net:v0.18.0",
+              "golang.org/x/tools:v0.15.0",
+              "golang.org/x/exp:v0.0.0-20231110203233-9a3e6036ecaa",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "golang.org/x/net:v0.18.0",
+              "golang.org/x/tools:v0.15.0",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "7fec05b8e8f5d4e5a5d36583120112d3649e8f2f",
+          "md5": "adc6aa903e22d212f47754096e0e689d",
+          "sha256": "b9814897e0e09cd576a7a013f066c7db537a3d538d2e0f60f0caee9bc1b3f4af"
+        },
+        {
+          "id": "github.com/kylelemons/godebug:v1.1.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "e8b21fdb91a1edf52e16f5e5409caca01392a7dc",
+          "md5": "68120982f461534e409984adc946abbb",
+          "sha256": "dbbd0ce8c2f4932bb03704d73026b21af12bd68d5b8f4798dbf10a487a2b6d13"
+        },
+        {
+          "id": "github.com/huin/goupnp:v1.3.0",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "e14b5b6abb3172932f0b3ace3303ea1edc2f1fea",
+          "md5": "fc55920ea0aa8d31874dc6ba5dd1324c",
+          "sha256": "df663b90b9b3bf16e1cfa810a6c3dd904993e8c1155dbf65566ce0361f163dce"
+        },
+        {
+          "id": "github.com/holiman/bloomfilter/v2:v2.0.3",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "6bffb5ddfd9327f343a1f43ef8f5a95835b684cb",
+          "md5": "808f6c76d9516ba5a7b75eb31e3fc98c",
+          "sha256": "d7a10d58030c901f86bb47f5f612c17ad51661884c1cdf2012a99f9e7ab9d791"
+        },
+        {
+          "id": "github.com/davecgh/go-spew:v1.1.1",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/Azure/azure-sdk-for-go/sdk/storage/azblob:v1.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/VictoriaMetrics/fastcache:v1.12.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/stretchr/testify:v1.8.4",
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/cockroachdb/pebble:v0.0.0-20230928194634-aa077af62593",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/crate-crypto/go-kzg-4844:v0.7.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/crate-crypto/go-ipa:v0.0.0-20231025140028-3c0104f4b233",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/consensys/gnark-crypto:v0.12.1",
+              "github.com/gballet/go-verkle:v0.1.1-0.20231031103413-a67434b50f46",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/hashicorp/go-bexpr:v0.1.10",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/btcsuite/btcd/btcec/v2:v2.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/btcsuite/btcd/btcec/v2:v2.2.0",
+              "github.com/status-im/keycard-go:v0.2.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/status-im/keycard-go:v0.2.0",
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "0f9760bda0c6ccacac5e57f62d0f5ad9c7dab03f",
+          "md5": "feef6644bd69286382139b28be3f0b91",
+          "sha256": "6b44a843951f371b7010c754ecc3cabefe815d5ced1c5b9409fb2d697e8a890d"
+        },
+        {
+          "id": "github.com/hashicorp/go-retryablehttp:v0.7.4",
+          "type": "zip",
+          "requestedBy": [
+            [
+              "github.com/cloudflare/cloudflare-go:v0.79.0",
+              "github.com/ethereum/go-ethereum"
+            ],
+            [
+              "github.com/ethereum/go-ethereum"
+            ]
+          ],
+          "sha1": "10f1bbb3f697da1f57a80b25aeb14ba8f9fc8ca4",
+          "md5": "14d58c406b16a4ed1539186a592f5e46",
+          "sha256": "00f6d85c5c8b327f56d49ad48ef1d2df94affea340ca46ce827415ba75db4712"
+        }
+      ]
+    }
+  ],
+  "started": "2024-02-16T16:42:01.841+0100"
+}
+

@@ -1,0 +1,42 @@
+Capslock is an experimental tool for static analysis of Go packages. Share feedback and file bugs at github.com/google/capslock.
+To get machine-readable full analysis output, use -output=json
+
+Analyzed packages:
+github.com/bits-and-blooms/bitset v1.10.0
+github.com/consensys/bavard v0.1.13
+github.com/consensys/gnark-crypto v0.12.1
+github.com/crate-crypto/go-kzg-4844 v0.7.0
+github.com/ethereum/go-ethereum v1.13.13
+github.com/holiman/uint256 v1.2.4
+github.com/mmcloughlin/addchain v0.4.0
+golang.org/x/crypto v0.17.0
+golang.org/x/exp v0.0.0-20231110203233-9a3e6036ecaa
+golang.org/x/sync v0.5.0
+golang.org/x/sys v0.16.0
+rsc.io/tmplfunc v0.0.3
+
+CAPABILITY_READ_SYSTEM_STATE: 1 references
+0 direct, 1 transitive
+Example callpath: github.com/ethereum/go-ethereum.init github.com/ethereum/go-ethereum/core/types.init github.com/ethereum/go-ethereum/crypto/kzg4844.init github.com/crate-crypto/go-kzg-4844.init github.com/consensys/gnark-crypto/ecc/bls12-381/fr.init golang.org/x/sys/cpu.init golang.org/x/sys/cpu.init#1 golang.org/x/sys/cpu.processOptions os.Getenv
+
+CAPABILITY_ARBITRARY_EXECUTION: 1 references
+0 direct, 1 transitive
+Example callpath: github.com/ethereum/go-ethereum.init github.com/ethereum/go-ethereum/core/types.init github.com/ethereum/go-ethereum/crypto/kzg4844.init github.com/crate-crypto/go-kzg-4844.init github.com/consensys/gnark-crypto/ecc/bls12-381.init github.com/consensys/gnark-crypto/ecc/bls12-381.init#1 (*github.com/consensys/gnark-crypto/ecc/bls12-381/fp.Element).Square github.com/consensys/gnark-crypto/ecc/bls12-381/fp.mul
+
+CAPABILITY_CGO: 1 references
+0 direct, 1 transitive
+Example callpath: github.com/ethereum/go-ethereum.init github.com/ethereum/go-ethereum/core/types.init github.com/ethereum/go-ethereum/crypto.init github.com/ethereum/go-ethereum/crypto/secp256k1.init github.com/ethereum/go-ethereum/crypto/secp256k1.init#2 github.com/ethereum/go-ethereum/crypto/secp256k1.init#2$1 github.com/ethereum/go-ethereum/crypto/secp256k1._cgoCheckPointer
+
+CAPABILITY_UNANALYZED: 1 references
+0 direct, 1 transitive
+Example callpath: github.com/ethereum/go-ethereum.init github.com/ethereum/go-ethereum/core/types.init github.com/ethereum/go-ethereum/core/types.rlpHash (*sync.Pool).Get
+
+CAPABILITY_REFLECT: 1 references
+0 direct, 1 transitive
+Example callpath: github.com/ethereum/go-ethereum.init github.com/ethereum/go-ethereum/core/types.init github.com/ethereum/go-ethereum/core/types.rlpHash github.com/ethereum/go-ethereum/rlp.Encode (*github.com/ethereum/go-ethereum/rlp.encBuffer).encode github.com/ethereum/go-ethereum/rlp.makeEncoderWriter$1 (reflect.Value).Interface
+
+CAPABILITY_UNSAFE_POINTER: 1 references
+0 direct, 1 transitive
+Example callpath: github.com/ethereum/go-ethereum.init github.com/ethereum/go-ethereum/core/types.init github.com/ethereum/go-ethereum/crypto.init github.com/ethereum/go-ethereum/crypto/secp256k1.init
+
+
