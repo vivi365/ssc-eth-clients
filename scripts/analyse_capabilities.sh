@@ -6,12 +6,20 @@ if [ $# -ne 1 ]; then
 fi
 
 SRC_DIR=~/$1
-DIR=~/ssc-thesis/data/capabilities
+DIR=~/ssc-eth-clients/data/capabilities
+OUT="$DIR"/caps_"$1"_"$(date +%Y-%m-%d-%H)".json
 
 mkdir -p "$DIR"
 cd "$SRC_DIR" || exit 1
+if [ -f "$OUT" ]; then 
+    rm "$OUT"
+fi
 
-# todo: does not pull changes from remote
-# todo: all packages in a module. 
-# go mod tidy
-capslock -output=v > "$DIR"/caps_"$1"_"$(date +%Y-%m-%d-%H)".txt
+# todo: checkout upstream & pull
+ALL=$(go list all)
+for path in $ALL;
+do
+    capslock -packages="$path" -output=json >> "$OUT"
+done
+
+# todo: very large files as reoccurring packages included for all packages(e.g. flag pkg)
