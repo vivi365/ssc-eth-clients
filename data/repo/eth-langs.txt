@@ -1,9 +1,14 @@
 Go: 323904
+C: 17920
 JavaScript: 15210
 Assembly: 4282
 Shell: 902
 Java: 768
 Sage: 892
 M4: 334
+NSIS: 685
 Python: 338
 Solidity: 345
+Makefile: 49
+HTML: 45
+Dockerfile: 65
