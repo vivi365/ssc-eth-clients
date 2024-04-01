@@ -1,15 +1,17 @@
-Go: 323904 (LOC)
-C: 17920 (LOC)
-JavaScript: 15210 (LOC)
-Assembly: 4282 (LOC)
-Shell: 902 (LOC)
-Java: 768 (LOC)
-Sage: 892 (LOC)
-M4: 334 (LOC)
-NSIS: 685 (LOC)
-Python: 338 (LOC)
-Solidity: 345 (LOC)
-Makefile: 49 (LOC)
-HTML: 45 (LOC)
-Dockerfile: 65 (LOC)
-Total: 365739
+Go. FILES: 1179 LOC: 323904
+C. FILES: 68 LOC: 17920
+JavaScript. FILES: 40 LOC: 15210
+Assembly. FILES: 7 LOC: 4282
+Shell. FILES: 10 LOC: 902
+Java. FILES: 4 LOC: 768
+Sage. FILES: 3 LOC: 892
+M4. FILES: 3 LOC: 334
+NSIS. FILES: 5 LOC: 685
+Python. FILES: 2 LOC: 338
+Solidity. FILES: 2 LOC: 345
+Makefile. FILES: 1 LOC: 49
+HTML. FILES: 1 LOC: 45
+Dockerfile. FILES: 2 LOC: 65
+
+Total FILES: 1327
+Total LOC: 365739
