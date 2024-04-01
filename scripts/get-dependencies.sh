@@ -6,7 +6,7 @@ if [ $# -ne 1 ]; then
 fi
 
 SRC_DIR=~/$1
-DIR=~/ssc-thesis/data/dependencies
+DIR=~/ssc-eth-clients/data/dependencies
 FILE_NAME="all_deps_$1_$(date +%Y-%m-%d-%H).txt"
 
 mkdir -p "$DIR"
