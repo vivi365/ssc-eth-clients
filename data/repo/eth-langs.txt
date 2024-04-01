@@ -1,14 +1,15 @@
-Go: 323904
-C: 17920
-JavaScript: 15210
-Assembly: 4282
-Shell: 902
-Java: 768
-Sage: 892
-M4: 334
-NSIS: 685
-Python: 338
-Solidity: 345
-Makefile: 49
-HTML: 45
-Dockerfile: 65
+Go: 323904 (LOC)
+C: 17920 (LOC)
+JavaScript: 15210 (LOC)
+Assembly: 4282 (LOC)
+Shell: 902 (LOC)
+Java: 768 (LOC)
+Sage: 892 (LOC)
+M4: 334 (LOC)
+NSIS: 685 (LOC)
+Python: 338 (LOC)
+Solidity: 345 (LOC)
+Makefile: 49 (LOC)
+HTML: 45 (LOC)
+Dockerfile: 65 (LOC)
+Total: 365739
