@@ -1,0 +1,3090 @@
+{
+	"capabilityInfo":  [
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "(*archive/tar.sparseFileReader).WriteTo (os.fileWithoutReadFrom).Seek (*os.File).Seek",
+			"path":  [
+				{
+					"name":  "(*archive/tar.sparseFileReader).WriteTo"
+				},
+				{
+					"name":  "(os.fileWithoutReadFrom).Seek",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "754",
+						"column":  "23"
+					}
+				},
+				{
+					"name":  "(*os.File).Seek"
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "(*archive/tar.Reader).writeTo (*archive/tar.sparseFileReader).WriteTo (os.fileWithoutReadFrom).Seek (*os.File).Seek",
+			"path":  [
+				{
+					"name":  "(*archive/tar.Reader).writeTo"
+				},
+				{
+					"name":  "(*archive/tar.sparseFileReader).WriteTo",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "659",
+						"column":  "27"
+					}
+				},
+				{
+					"name":  "(os.fileWithoutReadFrom).Seek",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "754",
+						"column":  "23"
+					}
+				},
+				{
+					"name":  "(*os.File).Seek"
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.sparseFileWriter).ReadFrom io.Copy",
+			"path":  [
+				{
+					"name":  "(*archive/tar.sparseFileWriter).ReadFrom"
+				},
+				{
+					"name":  "io.Copy",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "582",
+						"column":  "17"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.regFileWriter).ReadFrom io.Copy",
+			"path":  [
+				{
+					"name":  "(*archive/tar.regFileWriter).ReadFrom"
+				},
+				{
+					"name":  "io.Copy",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "514",
+						"column":  "16"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.regFileReader).WriteTo io.Copy",
+			"path":  [
+				{
+					"name":  "(*archive/tar.regFileReader).WriteTo"
+				},
+				{
+					"name":  "io.Copy",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "691",
+						"column":  "16"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.sparseFileReader).WriteTo io.Copy",
+			"path":  [
+				{
+					"name":  "(*archive/tar.sparseFileReader).WriteTo"
+				},
+				{
+					"name":  "io.Copy",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "759",
+						"column":  "17"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "archive/tar.discard io.CopyN",
+			"path":  [
+				{
+					"name":  "archive/tar.discard"
+				},
+				{
+					"name":  "io.CopyN",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "877",
+						"column":  "30"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "archive/tar.tryReadFull (*io.LimitedReader).Read",
+			"path":  [
+				{
+					"name":  "archive/tar.tryReadFull"
+				},
+				{
+					"name":  "(*io.LimitedReader).Read",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "835",
+						"column":  "19"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "archive/tar.readSpecialFile io.ReadAll",
+			"path":  [
+				{
+					"name":  "archive/tar.readSpecialFile"
+				},
+				{
+					"name":  "io.ReadAll",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "847",
+						"column":  "24"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.Reader).readHeader io.ReadFull",
+			"path":  [
+				{
+					"name":  "(*archive/tar.Reader).readHeader"
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "357",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.Writer).writeRawFile io.WriteString",
+			"path":  [
+				{
+					"name":  "(*archive/tar.Writer).writeRawFile"
+				},
+				{
+					"name":  "io.WriteString",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "384",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.Writer).readFrom (*archive/tar.sparseFileWriter).ReadFrom io.Copy",
+			"path":  [
+				{
+					"name":  "(*archive/tar.Writer).readFrom"
+				},
+				{
+					"name":  "(*archive/tar.sparseFileWriter).ReadFrom",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "459",
+						"column":  "28"
+					}
+				},
+				{
+					"name":  "io.Copy",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "582",
+						"column":  "17"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.Reader).writeTo (*archive/tar.regFileReader).WriteTo io.Copy",
+			"path":  [
+				{
+					"name":  "(*archive/tar.Reader).writeTo"
+				},
+				{
+					"name":  "(*archive/tar.regFileReader).WriteTo",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "659",
+						"column":  "27"
+					}
+				},
+				{
+					"name":  "io.Copy",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "691",
+						"column":  "16"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.Reader).next archive/tar.discard io.CopyN",
+			"path":  [
+				{
+					"name":  "(*archive/tar.Reader).next"
+				},
+				{
+					"name":  "archive/tar.discard",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "81",
+						"column":  "20"
+					}
+				},
+				{
+					"name":  "io.CopyN",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "877",
+						"column":  "30"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.sparseFileReader).Read archive/tar.tryReadFull (*io.LimitedReader).Read",
+			"path":  [
+				{
+					"name":  "(*archive/tar.sparseFileReader).Read"
+				},
+				{
+					"name":  "archive/tar.tryReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "724",
+						"column":  "25"
+					}
+				},
+				{
+					"name":  "(*io.LimitedReader).Read",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "835",
+						"column":  "19"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "archive/tar.ensureEOF archive/tar.tryReadFull (*io.LimitedReader).Read",
+			"path":  [
+				{
+					"name":  "archive/tar.ensureEOF"
+				},
+				{
+					"name":  "archive/tar.tryReadFull",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "650",
+						"column":  "23"
+					}
+				},
+				{
+					"name":  "(*io.LimitedReader).Read",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "835",
+						"column":  "19"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "archive/tar.mustReadFull archive/tar.tryReadFull (*io.LimitedReader).Read",
+			"path":  [
+				{
+					"name":  "archive/tar.mustReadFull"
+				},
+				{
+					"name":  "archive/tar.tryReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "823",
+						"column":  "23"
+					}
+				},
+				{
+					"name":  "(*io.LimitedReader).Read",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "835",
+						"column":  "19"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "archive/tar.parsePAX archive/tar.readSpecialFile io.ReadAll",
+			"path":  [
+				{
+					"name":  "archive/tar.parsePAX"
+				},
+				{
+					"name":  "archive/tar.readSpecialFile",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "309",
+						"column":  "29"
+					}
+				},
+				{
+					"name":  "io.ReadAll",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "847",
+						"column":  "24"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.Writer).writeGNUHeader (*archive/tar.Writer).writeRawFile io.WriteString",
+			"path":  [
+				{
+					"name":  "(*archive/tar.Writer).writeGNUHeader"
+				},
+				{
+					"name":  "(*archive/tar.Writer).writeRawFile",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "239",
+						"column":  "28"
+					}
+				},
+				{
+					"name":  "io.WriteString",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "384",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.Writer).writePAXHeader (*archive/tar.Writer).writeRawFile io.WriteString",
+			"path":  [
+				{
+					"name":  "(*archive/tar.Writer).writePAXHeader"
+				},
+				{
+					"name":  "(*archive/tar.Writer).writeRawFile",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "205",
+						"column":  "28"
+					}
+				},
+				{
+					"name":  "io.WriteString",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "384",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.Reader).Next (*archive/tar.Reader).next archive/tar.discard io.CopyN",
+			"path":  [
+				{
+					"name":  "(*archive/tar.Reader).Next"
+				},
+				{
+					"name":  "(*archive/tar.Reader).next",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "58",
+						"column":  "21"
+					}
+				},
+				{
+					"name":  "archive/tar.discard",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "81",
+						"column":  "20"
+					}
+				},
+				{
+					"name":  "io.CopyN",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "877",
+						"column":  "30"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.Reader).Read (*archive/tar.sparseFileReader).Read archive/tar.tryReadFull (*io.LimitedReader).Read",
+			"path":  [
+				{
+					"name":  "(*archive/tar.Reader).Read"
+				},
+				{
+					"name":  "(*archive/tar.sparseFileReader).Read",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "638",
+						"column":  "24"
+					}
+				},
+				{
+					"name":  "archive/tar.tryReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "724",
+						"column":  "25"
+					}
+				},
+				{
+					"name":  "(*io.LimitedReader).Read",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "835",
+						"column":  "19"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "archive/tar.readGNUSparseMap1x0$1 archive/tar.mustReadFull archive/tar.tryReadFull (*io.LimitedReader).Read",
+			"path":  [
+				{
+					"name":  "archive/tar.readGNUSparseMap1x0$1"
+				},
+				{
+					"name":  "archive/tar.mustReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "540",
+						"column":  "29"
+					}
+				},
+				{
+					"name":  "archive/tar.tryReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "823",
+						"column":  "23"
+					}
+				},
+				{
+					"name":  "(*io.LimitedReader).Read",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "835",
+						"column":  "19"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.Reader).readOldGNUSparseMap archive/tar.mustReadFull archive/tar.tryReadFull (*io.LimitedReader).Read",
+			"path":  [
+				{
+					"name":  "(*archive/tar.Reader).readOldGNUSparseMap"
+				},
+				{
+					"name":  "archive/tar.mustReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "509",
+						"column":  "29"
+					}
+				},
+				{
+					"name":  "archive/tar.tryReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "823",
+						"column":  "23"
+					}
+				},
+				{
+					"name":  "(*io.LimitedReader).Read",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "835",
+						"column":  "19"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.Writer).WriteHeader (*archive/tar.Writer).writeGNUHeader (*archive/tar.Writer).writeRawFile io.WriteString",
+			"path":  [
+				{
+					"name":  "(*archive/tar.Writer).WriteHeader"
+				},
+				{
+					"name":  "(*archive/tar.Writer).writeGNUHeader",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "103",
+						"column":  "29"
+					}
+				},
+				{
+					"name":  "(*archive/tar.Writer).writeRawFile",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "239",
+						"column":  "28"
+					}
+				},
+				{
+					"name":  "io.WriteString",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "384",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "archive/tar.readGNUSparseMap1x0 archive/tar.readGNUSparseMap1x0$1 archive/tar.mustReadFull archive/tar.tryReadFull (*io.LimitedReader).Read",
+			"path":  [
+				{
+					"name":  "archive/tar.readGNUSparseMap1x0"
+				},
+				{
+					"name":  "archive/tar.readGNUSparseMap1x0$1",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "563",
+						"column":  "22"
+					}
+				},
+				{
+					"name":  "archive/tar.mustReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "540",
+						"column":  "29"
+					}
+				},
+				{
+					"name":  "archive/tar.tryReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "823",
+						"column":  "23"
+					}
+				},
+				{
+					"name":  "(*io.LimitedReader).Read",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "835",
+						"column":  "19"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.Reader).handleSparseFile (*archive/tar.Reader).readOldGNUSparseMap archive/tar.mustReadFull archive/tar.tryReadFull (*io.LimitedReader).Read",
+			"path":  [
+				{
+					"name":  "(*archive/tar.Reader).handleSparseFile"
+				},
+				{
+					"name":  "(*archive/tar.Reader).readOldGNUSparseMap",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "198",
+						"column":  "36"
+					}
+				},
+				{
+					"name":  "archive/tar.mustReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "509",
+						"column":  "29"
+					}
+				},
+				{
+					"name":  "archive/tar.tryReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "823",
+						"column":  "23"
+					}
+				},
+				{
+					"name":  "(*io.LimitedReader).Read",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "835",
+						"column":  "19"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/tar.Reader).readGNUSparsePAXHeaders archive/tar.readGNUSparseMap1x0 archive/tar.readGNUSparseMap1x0$1 archive/tar.mustReadFull archive/tar.tryReadFull (*io.LimitedReader).Read",
+			"path":  [
+				{
+					"name":  "(*archive/tar.Reader).readGNUSparsePAXHeaders"
+				},
+				{
+					"name":  "archive/tar.readGNUSparseMap1x0",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "255",
+						"column":  "29"
+					}
+				},
+				{
+					"name":  "archive/tar.readGNUSparseMap1x0$1",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "563",
+						"column":  "22"
+					}
+				},
+				{
+					"name":  "archive/tar.mustReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "540",
+						"column":  "29"
+					}
+				},
+				{
+					"name":  "archive/tar.tryReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "823",
+						"column":  "23"
+					}
+				},
+				{
+					"name":  "(*io.LimitedReader).Read",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "835",
+						"column":  "19"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_READ_SYSTEM_STATE",
+			"depPath":  "archive/tar.statUnix os/user.LookupGroupId",
+			"path":  [
+				{
+					"name":  "archive/tar.statUnix"
+				},
+				{
+					"name":  "os/user.LookupGroupId",
+					"site":  {
+						"filename":  "stat_unix.go",
+						"line":  "45",
+						"column":  "40"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_READ_SYSTEM_STATE",
+			"depPath":  "archive/tar.FileInfoHeader archive/tar.statUnix os/user.LookupGroupId",
+			"path":  [
+				{
+					"name":  "archive/tar.FileInfoHeader"
+				},
+				{
+					"name":  "archive/tar.statUnix",
+					"site":  {
+						"filename":  "common.go",
+						"line":  "715",
+						"column":  "20"
+					}
+				},
+				{
+					"name":  "os/user.LookupGroupId",
+					"site":  {
+						"filename":  "stat_unix.go",
+						"line":  "45",
+						"column":  "40"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_SYSTEM_CALLS",
+			"depPath":  "archive/tar.statAtime (*syscall.Timespec).Unix",
+			"path":  [
+				{
+					"name":  "archive/tar.statAtime"
+				},
+				{
+					"name":  "(*syscall.Timespec).Unix",
+					"site":  {
+						"filename":  "stat_actime2.go",
+						"line":  "15",
+						"column":  "36"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_SYSTEM_CALLS",
+			"depPath":  "archive/tar.statCtime (*syscall.Timespec).Unix",
+			"path":  [
+				{
+					"name":  "archive/tar.statCtime"
+				},
+				{
+					"name":  "(*syscall.Timespec).Unix",
+					"site":  {
+						"filename":  "stat_actime2.go",
+						"line":  "19",
+						"column":  "36"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_SYSTEM_CALLS",
+			"depPath":  "archive/tar.statUnix archive/tar.statAtime (*syscall.Timespec).Unix",
+			"path":  [
+				{
+					"name":  "archive/tar.statUnix"
+				},
+				{
+					"name":  "archive/tar.statAtime",
+					"site":  {
+						"filename":  "stat_unix.go",
+						"line":  "50",
+						"column":  "26"
+					}
+				},
+				{
+					"name":  "(*syscall.Timespec).Unix",
+					"site":  {
+						"filename":  "stat_actime2.go",
+						"line":  "15",
+						"column":  "36"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "tar",
+			"capability":  "CAPABILITY_SYSTEM_CALLS",
+			"depPath":  "archive/tar.FileInfoHeader archive/tar.statUnix archive/tar.statAtime (*syscall.Timespec).Unix",
+			"path":  [
+				{
+					"name":  "archive/tar.FileInfoHeader"
+				},
+				{
+					"name":  "archive/tar.statUnix",
+					"site":  {
+						"filename":  "common.go",
+						"line":  "715",
+						"column":  "20"
+					}
+				},
+				{
+					"name":  "archive/tar.statAtime",
+					"site":  {
+						"filename":  "stat_unix.go",
+						"line":  "50",
+						"column":  "26"
+					}
+				},
+				{
+					"name":  "(*syscall.Timespec).Unix",
+					"site":  {
+						"filename":  "stat_actime2.go",
+						"line":  "15",
+						"column":  "36"
+					}
+				}
+			],
+			"packageDir":  "archive/tar",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		}
+	]
+}
+{
+	"capabilityInfo":  [
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.Writer).Close (*bufio.Writer).Flush",
+			"path":  [
+				{
+					"name":  "(*archive/zip.Writer).Close"
+				},
+				{
+					"name":  "(*bufio.Writer).Flush",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "206",
+						"column":  "37"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.Writer).Flush (*bufio.Writer).Flush",
+			"path":  [
+				{
+					"name":  "(*archive/zip.Writer).Flush"
+				},
+				{
+					"name":  "(*bufio.Writer).Flush",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "62",
+						"column":  "37"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.countWriter).Write (*bufio.Writer).Write",
+			"path":  [
+				{
+					"name":  "(*archive/zip.countWriter).Write"
+				},
+				{
+					"name":  "(*bufio.Writer).Write",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "601",
+						"column":  "21"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.Writer).Copy io.Copy",
+			"path":  [
+				{
+					"name":  "(*archive/zip.Writer).Copy"
+				},
+				{
+					"name":  "io.Copy",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "484",
+						"column":  "18"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "archive/zip.readDataDescriptor io.ReadFull",
+			"path":  [
+				{
+					"name":  "archive/zip.readDataDescriptor"
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "540",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "archive/zip.readDirectoryHeader io.ReadFull",
+			"path":  [
+				{
+					"name":  "archive/zip.readDirectoryHeader"
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "358",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "archive/zip.writeHeader io.WriteString",
+			"path":  [
+				{
+					"name":  "archive/zip.writeHeader"
+				},
+				{
+					"name":  "io.WriteString",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "422",
+						"column":  "29"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.Reader).openLookup sort.Search",
+			"path":  [
+				{
+					"name":  "(*archive/zip.Reader).openLookup"
+				},
+				{
+					"name":  "sort.Search",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "919",
+						"column":  "18"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.Reader).openReadDir sort.Search",
+			"path":  [
+				{
+					"name":  "(*archive/zip.Reader).openReadDir"
+				},
+				{
+					"name":  "sort.Search",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "934",
+						"column":  "18"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.fileWriter).Write (*archive/zip.countWriter).Write (*bufio.Writer).Write",
+			"path":  [
+				{
+					"name":  "(*archive/zip.fileWriter).Write"
+				},
+				{
+					"name":  "(*archive/zip.countWriter).Write",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "533",
+						"column":  "25"
+					}
+				},
+				{
+					"name":  "(*bufio.Writer).Write",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "601",
+						"column":  "21"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.fileWriter).writeDataDescriptor (*archive/zip.countWriter).Write (*bufio.Writer).Write",
+			"path":  [
+				{
+					"name":  "(*archive/zip.fileWriter).writeDataDescriptor"
+				},
+				{
+					"name":  "(*archive/zip.countWriter).Write",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "591",
+						"column":  "24"
+					}
+				},
+				{
+					"name":  "(*bufio.Writer).Write",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "601",
+						"column":  "21"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.checksumReader).Read archive/zip.readDataDescriptor io.ReadFull",
+			"path":  [
+				{
+					"name":  "(*archive/zip.checksumReader).Read"
+				},
+				{
+					"name":  "archive/zip.readDataDescriptor",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "312",
+						"column":  "33"
+					}
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "540",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.Reader).init archive/zip.readDirectoryHeader io.ReadFull",
+			"path":  [
+				{
+					"name":  "(*archive/zip.Reader).init"
+				},
+				{
+					"name":  "archive/zip.readDirectoryHeader",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "147",
+						"column":  "28"
+					}
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "358",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "archive/zip.readDirectoryEnd archive/zip.readDirectoryHeader io.ReadFull",
+			"path":  [
+				{
+					"name":  "archive/zip.readDirectoryEnd"
+				},
+				{
+					"name":  "archive/zip.readDirectoryHeader",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "638",
+						"column":  "25"
+					}
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "358",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.Writer).CreateHeader archive/zip.writeHeader io.WriteString",
+			"path":  [
+				{
+					"name":  "(*archive/zip.Writer).CreateHeader"
+				},
+				{
+					"name":  "archive/zip.writeHeader",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "378",
+						"column":  "23"
+					}
+				},
+				{
+					"name":  "io.WriteString",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "422",
+						"column":  "29"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.Writer).CreateRaw archive/zip.writeHeader io.WriteString",
+			"path":  [
+				{
+					"name":  "(*archive/zip.Writer).CreateRaw"
+				},
+				{
+					"name":  "archive/zip.writeHeader",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "456",
+						"column":  "23"
+					}
+				},
+				{
+					"name":  "io.WriteString",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "422",
+						"column":  "29"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.Reader).Open (*archive/zip.Reader).openLookup sort.Search",
+			"path":  [
+				{
+					"name":  "(*archive/zip.Reader).Open"
+				},
+				{
+					"name":  "(*archive/zip.Reader).openLookup",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "881",
+						"column":  "19"
+					}
+				},
+				{
+					"name":  "sort.Search",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "919",
+						"column":  "18"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.fileWriter).close (*archive/zip.fileWriter).writeDataDescriptor (*archive/zip.countWriter).Write (*bufio.Writer).Write",
+			"path":  [
+				{
+					"name":  "(*archive/zip.fileWriter).close"
+				},
+				{
+					"name":  "(*archive/zip.fileWriter).writeDataDescriptor",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "542",
+						"column":  "31"
+					}
+				},
+				{
+					"name":  "(*archive/zip.countWriter).Write",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "591",
+						"column":  "24"
+					}
+				},
+				{
+					"name":  "(*bufio.Writer).Write",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "601",
+						"column":  "21"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "archive/zip.NewReader (*archive/zip.Reader).init archive/zip.readDirectoryHeader io.ReadFull",
+			"path":  [
+				{
+					"name":  "archive/zip.NewReader"
+				},
+				{
+					"name":  "(*archive/zip.Reader).init",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "112",
+						"column":  "18"
+					}
+				},
+				{
+					"name":  "archive/zip.readDirectoryHeader",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "147",
+						"column":  "28"
+					}
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "358",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "archive/zip.OpenReader (*archive/zip.Reader).init archive/zip.readDirectoryHeader io.ReadFull",
+			"path":  [
+				{
+					"name":  "archive/zip.OpenReader"
+				},
+				{
+					"name":  "(*archive/zip.Reader).init",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "88",
+						"column":  "17"
+					}
+				},
+				{
+					"name":  "archive/zip.readDirectoryHeader",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "147",
+						"column":  "28"
+					}
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "358",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.Writer).Create (*archive/zip.Writer).CreateHeader archive/zip.writeHeader io.WriteString",
+			"path":  [
+				{
+					"name":  "(*archive/zip.Writer).Create"
+				},
+				{
+					"name":  "(*archive/zip.Writer).CreateHeader",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "223",
+						"column":  "23"
+					}
+				},
+				{
+					"name":  "archive/zip.writeHeader",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "378",
+						"column":  "23"
+					}
+				},
+				{
+					"name":  "io.WriteString",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "422",
+						"column":  "29"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.Writer).prepare (*archive/zip.fileWriter).close (*archive/zip.fileWriter).writeDataDescriptor (*archive/zip.countWriter).Write (*bufio.Writer).Write",
+			"path":  [
+				{
+					"name":  "(*archive/zip.Writer).prepare"
+				},
+				{
+					"name":  "(*archive/zip.fileWriter).close",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "253",
+						"column":  "25"
+					}
+				},
+				{
+					"name":  "(*archive/zip.fileWriter).writeDataDescriptor",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "542",
+						"column":  "31"
+					}
+				},
+				{
+					"name":  "(*archive/zip.countWriter).Write",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "591",
+						"column":  "24"
+					}
+				},
+				{
+					"name":  "(*bufio.Writer).Write",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "601",
+						"column":  "21"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.pooledFlateReader).Read (*compress/flate.decompressor).Read (*compress/flate.decompressor).copyData$thunk (*compress/flate.decompressor).copyData io.ReadFull",
+			"path":  [
+				{
+					"name":  "(*archive/zip.pooledFlateReader).Read"
+				},
+				{
+					"name":  "(*compress/flate.decompressor).Read",
+					"site":  {
+						"filename":  "register.go",
+						"line":  "89",
+						"column":  "18"
+					}
+				},
+				{
+					"name":  "(*compress/flate.decompressor).copyData$thunk",
+					"site":  {
+						"filename":  "inflate.go",
+						"line":  "348",
+						"column":  "9"
+					}
+				},
+				{
+					"name":  "(*compress/flate.decompressor).copyData"
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "inflate.go",
+						"line":  "661",
+						"column":  "25"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.pooledFlateWriter).Close (*compress/flate.Writer).Close (*compress/flate.compressor).close (*compress/flate.huffmanBitWriter).flush (*compress/flate.huffmanBitWriter).write (*archive/zip.countWriter).Write (*bufio.Writer).Write",
+			"path":  [
+				{
+					"name":  "(*archive/zip.pooledFlateWriter).Close"
+				},
+				{
+					"name":  "(*compress/flate.Writer).Close",
+					"site":  {
+						"filename":  "register.go",
+						"line":  "59",
+						"column":  "19"
+					}
+				},
+				{
+					"name":  "(*compress/flate.compressor).close",
+					"site":  {
+						"filename":  "deflate.go",
+						"line":  "730",
+						"column":  "18"
+					}
+				},
+				{
+					"name":  "(*compress/flate.huffmanBitWriter).flush",
+					"site":  {
+						"filename":  "deflate.go",
+						"line":  "645",
+						"column":  "11"
+					}
+				},
+				{
+					"name":  "(*compress/flate.huffmanBitWriter).write",
+					"site":  {
+						"filename":  "huffman_bit_writer.go",
+						"line":  "128",
+						"column":  "9"
+					}
+				},
+				{
+					"name":  "(*archive/zip.countWriter).Write",
+					"site":  {
+						"filename":  "huffman_bit_writer.go",
+						"line":  "136",
+						"column":  "27"
+					}
+				},
+				{
+					"name":  "(*bufio.Writer).Write",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "601",
+						"column":  "21"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*archive/zip.pooledFlateWriter).Write (*compress/flate.Writer).Write (*compress/flate.compressor).write (*compress/flate.compressor).encSpeed$thunk (*compress/flate.compressor).encSpeed (*compress/flate.huffmanBitWriter).writeBlockHuff (*compress/flate.huffmanBitWriter).write (*archive/zip.countWriter).Write (*bufio.Writer).Write",
+			"path":  [
+				{
+					"name":  "(*archive/zip.pooledFlateWriter).Write"
+				},
+				{
+					"name":  "(*compress/flate.Writer).Write",
+					"site":  {
+						"filename":  "register.go",
+						"line":  "51",
+						"column":  "19"
+					}
+				},
+				{
+					"name":  "(*compress/flate.compressor).write",
+					"site":  {
+						"filename":  "deflate.go",
+						"line":  "710",
+						"column":  "18"
+					}
+				},
+				{
+					"name":  "(*compress/flate.compressor).encSpeed$thunk",
+					"site":  {
+						"filename":  "deflate.go",
+						"line":  "544",
+						"column":  "9"
+					}
+				},
+				{
+					"name":  "(*compress/flate.compressor).encSpeed"
+				},
+				{
+					"name":  "(*compress/flate.huffmanBitWriter).writeBlockHuff",
+					"site":  {
+						"filename":  "deflate.go",
+						"line":  "346",
+						"column":  "23"
+					}
+				},
+				{
+					"name":  "(*compress/flate.huffmanBitWriter).write",
+					"site":  {
+						"filename":  "huffman_bit_writer.go",
+						"line":  "683",
+						"column":  "10"
+					}
+				},
+				{
+					"name":  "(*archive/zip.countWriter).Write",
+					"site":  {
+						"filename":  "huffman_bit_writer.go",
+						"line":  "136",
+						"column":  "27"
+					}
+				},
+				{
+					"name":  "(*bufio.Writer).Write",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "601",
+						"column":  "21"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_OPERATING_SYSTEM",
+			"depPath":  "(*archive/zip.fileListEntry).String io/fs.FormatDirEntry (*os.unixDirent).IsDir",
+			"path":  [
+				{
+					"name":  "(*archive/zip.fileListEntry).String"
+				},
+				{
+					"name":  "io/fs.FormatDirEntry",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "784",
+						"column":  "26"
+					}
+				},
+				{
+					"name":  "(*os.unixDirent).IsDir",
+					"site":  {
+						"filename":  "format.go",
+						"line":  "72",
+						"column":  "14"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "(*archive/zip.ReadCloser).Close (*os.File).Close",
+			"path":  [
+				{
+					"name":  "(*archive/zip.ReadCloser).Close"
+				},
+				{
+					"name":  "(*os.File).Close",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "199",
+						"column":  "19"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "archive/zip.OpenReader (*os.File).Close",
+			"path":  [
+				{
+					"name":  "archive/zip.OpenReader"
+				},
+				{
+					"name":  "(*os.File).Close",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "89",
+						"column":  "10"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "(*archive/zip.File).findBodyOffset (*os.File).ReadAt",
+			"path":  [
+				{
+					"name":  "(*archive/zip.File).findBodyOffset"
+				},
+				{
+					"name":  "(*os.File).ReadAt",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "340",
+						"column":  "28"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "archive/zip.findDirectory64End (*os.File).ReadAt",
+			"path":  [
+				{
+					"name":  "archive/zip.findDirectory64End"
+				},
+				{
+					"name":  "(*os.File).ReadAt",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "655",
+						"column":  "23"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "archive/zip.readDirectory64End (*os.File).ReadAt",
+			"path":  [
+				{
+					"name":  "archive/zip.readDirectory64End"
+				},
+				{
+					"name":  "(*os.File).ReadAt",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "676",
+						"column":  "23"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "archive/zip.readDirectoryEnd (*os.File).ReadAt",
+			"path":  [
+				{
+					"name":  "archive/zip.readDirectoryEnd"
+				},
+				{
+					"name":  "(*os.File).ReadAt",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "576",
+						"column":  "24"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "(*archive/zip.fileListEntry).String io/fs.FormatDirEntry (*os.unixDirent).Name",
+			"path":  [
+				{
+					"name":  "(*archive/zip.fileListEntry).String"
+				},
+				{
+					"name":  "io/fs.FormatDirEntry",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "784",
+						"column":  "26"
+					}
+				},
+				{
+					"name":  "(*os.unixDirent).Name",
+					"site":  {
+						"filename":  "format.go",
+						"line":  "61",
+						"column":  "18"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "(*archive/zip.File).DataOffset (*archive/zip.File).findBodyOffset (*os.File).ReadAt",
+			"path":  [
+				{
+					"name":  "(*archive/zip.File).DataOffset"
+				},
+				{
+					"name":  "(*archive/zip.File).findBodyOffset",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "208",
+						"column":  "37"
+					}
+				},
+				{
+					"name":  "(*os.File).ReadAt",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "340",
+						"column":  "28"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "(*archive/zip.File).Open (*archive/zip.File).findBodyOffset (*os.File).ReadAt",
+			"path":  [
+				{
+					"name":  "(*archive/zip.File).Open"
+				},
+				{
+					"name":  "(*archive/zip.File).findBodyOffset",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "218",
+						"column":  "37"
+					}
+				},
+				{
+					"name":  "(*os.File).ReadAt",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "340",
+						"column":  "28"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "(*archive/zip.File).OpenRaw (*archive/zip.File).findBodyOffset (*os.File).ReadAt",
+			"path":  [
+				{
+					"name":  "(*archive/zip.File).OpenRaw"
+				},
+				{
+					"name":  "(*archive/zip.File).findBodyOffset",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "261",
+						"column":  "37"
+					}
+				},
+				{
+					"name":  "(*os.File).ReadAt",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "340",
+						"column":  "28"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "(*archive/zip.Reader).init archive/zip.readDirectoryEnd (*os.File).ReadAt",
+			"path":  [
+				{
+					"name":  "(*archive/zip.Reader).init"
+				},
+				{
+					"name":  "archive/zip.readDirectoryEnd",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "119",
+						"column":  "42"
+					}
+				},
+				{
+					"name":  "(*os.File).ReadAt",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "576",
+						"column":  "24"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "(*archive/zip.Reader).Open (*archive/zip.File).Open (*archive/zip.File).findBodyOffset (*os.File).ReadAt",
+			"path":  [
+				{
+					"name":  "(*archive/zip.Reader).Open"
+				},
+				{
+					"name":  "(*archive/zip.File).Open",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "888",
+						"column":  "24"
+					}
+				},
+				{
+					"name":  "(*archive/zip.File).findBodyOffset",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "218",
+						"column":  "37"
+					}
+				},
+				{
+					"name":  "(*os.File).ReadAt",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "340",
+						"column":  "28"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "(*archive/zip.Writer).Copy (*archive/zip.File).OpenRaw (*archive/zip.File).findBodyOffset (*os.File).ReadAt",
+			"path":  [
+				{
+					"name":  "(*archive/zip.Writer).Copy"
+				},
+				{
+					"name":  "(*archive/zip.File).OpenRaw",
+					"site":  {
+						"filename":  "writer.go",
+						"line":  "476",
+						"column":  "21"
+					}
+				},
+				{
+					"name":  "(*archive/zip.File).findBodyOffset",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "261",
+						"column":  "37"
+					}
+				},
+				{
+					"name":  "(*os.File).ReadAt",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "340",
+						"column":  "28"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "archive/zip.NewReader (*archive/zip.Reader).init archive/zip.readDirectoryEnd (*os.File).ReadAt",
+			"path":  [
+				{
+					"name":  "archive/zip.NewReader"
+				},
+				{
+					"name":  "(*archive/zip.Reader).init",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "112",
+						"column":  "18"
+					}
+				},
+				{
+					"name":  "archive/zip.readDirectoryEnd",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "119",
+						"column":  "42"
+					}
+				},
+				{
+					"name":  "(*os.File).ReadAt",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "576",
+						"column":  "24"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "zip",
+			"capability":  "CAPABILITY_FILES",
+			"depPath":  "(*archive/zip.checksumReader).Read (io.nopCloserWriterTo).Read (*io.SectionReader).Read (*os.File).ReadAt",
+			"path":  [
+				{
+					"name":  "(*archive/zip.checksumReader).Read"
+				},
+				{
+					"name":  "(io.nopCloserWriterTo).Read",
+					"site":  {
+						"filename":  "reader.go",
+						"line":  "298",
+						"column":  "20"
+					}
+				},
+				{
+					"name":  "(*io.SectionReader).Read"
+				},
+				{
+					"name":  "(*os.File).ReadAt",
+					"site":  {
+						"filename":  "io.go",
+						"line":  "516",
+						"column":  "21"
+					}
+				}
+			],
+			"packageDir":  "archive/zip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		}
+	]
+}
+{
+	"capabilityInfo":  [
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Reader).ReadLine",
+			"path":  [
+				{
+					"name":  "(*bufio.Reader).ReadLine"
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Reader).ReadByte",
+			"path":  [
+				{
+					"name":  "(*bufio.Reader).ReadByte"
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Reader).UnreadByte",
+			"path":  [
+				{
+					"name":  "(*bufio.Reader).UnreadByte"
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Writer).Reset",
+			"path":  [
+				{
+					"name":  "(*bufio.Writer).Reset"
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Writer).WriteByte",
+			"path":  [
+				{
+					"name":  "(*bufio.Writer).WriteByte"
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Reader).ReadString",
+			"path":  [
+				{
+					"name":  "(*bufio.Reader).ReadString"
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Writer).Write",
+			"path":  [
+				{
+					"name":  "(*bufio.Writer).Write"
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Reader).Read",
+			"path":  [
+				{
+					"name":  "(*bufio.Reader).Read"
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Writer).WriteRune",
+			"path":  [
+				{
+					"name":  "(*bufio.Writer).WriteRune"
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Reader).ReadSlice",
+			"path":  [
+				{
+					"name":  "(*bufio.Reader).ReadSlice"
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Reader).ReadRune",
+			"path":  [
+				{
+					"name":  "(*bufio.Reader).ReadRune"
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Writer).Flush",
+			"path":  [
+				{
+					"name":  "(*bufio.Writer).Flush"
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Writer).ReadFrom (*bufio.Writer).Flush",
+			"path":  [
+				{
+					"name":  "(*bufio.Writer).ReadFrom"
+				},
+				{
+					"name":  "(*bufio.Writer).Flush",
+					"site":  {
+						"filename":  "bufio.go",
+						"line":  "792",
+						"column":  "22"
+					}
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Writer).WriteString (*bufio.Writer).Flush",
+			"path":  [
+				{
+					"name":  "(*bufio.Writer).WriteString"
+				},
+				{
+					"name":  "(*bufio.Writer).Flush",
+					"site":  {
+						"filename":  "bufio.go",
+						"line":  "766",
+						"column":  "11"
+					}
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Reader).collectFragments (*bufio.Reader).ReadSlice",
+			"path":  [
+				{
+					"name":  "(*bufio.Reader).collectFragments"
+				},
+				{
+					"name":  "(*bufio.Reader).ReadSlice",
+					"site":  {
+						"filename":  "bufio.go",
+						"line":  "454",
+						"column":  "24"
+					}
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bufio",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bufio.Reader).ReadBytes (*bufio.Reader).collectFragments (*bufio.Reader).ReadSlice",
+			"path":  [
+				{
+					"name":  "(*bufio.Reader).ReadBytes"
+				},
+				{
+					"name":  "(*bufio.Reader).collectFragments",
+					"site":  {
+						"filename":  "bufio.go",
+						"line":  "481",
+						"column":  "42"
+					}
+				},
+				{
+					"name":  "(*bufio.Reader).ReadSlice",
+					"site":  {
+						"filename":  "bufio.go",
+						"line":  "454",
+						"column":  "24"
+					}
+				}
+			],
+			"packageDir":  "bufio",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		}
+	]
+}
+{
+	"capabilityInfo":  [
+		{
+			"packageName":  "bytes",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*bytes.Buffer).ReadFrom",
+			"path":  [
+				{
+					"name":  "(*bytes.Buffer).ReadFrom"
+				}
+			],
+			"packageDir":  "bytes",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		}
+	]
+}
+{
+	"capabilityInfo":  [
+		{
+			"packageName":  "bzip2",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/bzip2.bitReader).ReadBits64 (*bufio.Reader).ReadByte",
+			"path":  [
+				{
+					"name":  "(*compress/bzip2.bitReader).ReadBits64"
+				},
+				{
+					"name":  "(*bufio.Reader).ReadByte",
+					"site":  {
+						"filename":  "bit_reader.go",
+						"line":  "38",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "compress/bzip2",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bzip2",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/bzip2.reader).read (*bufio.Reader).ReadByte",
+			"path":  [
+				{
+					"name":  "(*compress/bzip2.reader).read"
+				},
+				{
+					"name":  "(*bufio.Reader).ReadByte",
+					"site":  {
+						"filename":  "bzip2.go",
+						"line":  "207",
+						"column":  "27"
+					}
+				}
+			],
+			"packageDir":  "compress/bzip2",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bzip2",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/bzip2.bitReader).ReadBits (*compress/bzip2.bitReader).ReadBits64 (*bufio.Reader).ReadByte",
+			"path":  [
+				{
+					"name":  "(*compress/bzip2.bitReader).ReadBits"
+				},
+				{
+					"name":  "(*compress/bzip2.bitReader).ReadBits64",
+					"site":  {
+						"filename":  "bit_reader.go",
+						"line":  "71",
+						"column":  "22"
+					}
+				},
+				{
+					"name":  "(*bufio.Reader).ReadByte",
+					"site":  {
+						"filename":  "bit_reader.go",
+						"line":  "38",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "compress/bzip2",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bzip2",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/bzip2.reader).readBlock (*compress/bzip2.bitReader).ReadBits64 (*bufio.Reader).ReadByte",
+			"path":  [
+				{
+					"name":  "(*compress/bzip2.reader).readBlock"
+				},
+				{
+					"name":  "(*compress/bzip2.bitReader).ReadBits64",
+					"site":  {
+						"filename":  "bzip2.go",
+						"line":  "238",
+						"column":  "41"
+					}
+				},
+				{
+					"name":  "(*bufio.Reader).ReadByte",
+					"site":  {
+						"filename":  "bit_reader.go",
+						"line":  "38",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "compress/bzip2",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bzip2",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/bzip2.reader).Read (*compress/bzip2.reader).read (*bufio.Reader).ReadByte",
+			"path":  [
+				{
+					"name":  "(*compress/bzip2.reader).Read"
+				},
+				{
+					"name":  "(*compress/bzip2.reader).read",
+					"site":  {
+						"filename":  "bzip2.go",
+						"line":  "102",
+						"column":  "19"
+					}
+				},
+				{
+					"name":  "(*bufio.Reader).ReadByte",
+					"site":  {
+						"filename":  "bzip2.go",
+						"line":  "207",
+						"column":  "27"
+					}
+				}
+			],
+			"packageDir":  "compress/bzip2",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bzip2",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/bzip2.huffmanTree).Decode (*compress/bzip2.bitReader).ReadBits (*compress/bzip2.bitReader).ReadBits64 (*bufio.Reader).ReadByte",
+			"path":  [
+				{
+					"name":  "(*compress/bzip2.huffmanTree).Decode"
+				},
+				{
+					"name":  "(*compress/bzip2.bitReader).ReadBits",
+					"site":  {
+						"filename":  "huffman.go",
+						"line":  "51",
+						"column":  "28"
+					}
+				},
+				{
+					"name":  "(*compress/bzip2.bitReader).ReadBits64",
+					"site":  {
+						"filename":  "bit_reader.go",
+						"line":  "71",
+						"column":  "22"
+					}
+				},
+				{
+					"name":  "(*bufio.Reader).ReadByte",
+					"site":  {
+						"filename":  "bit_reader.go",
+						"line":  "38",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "compress/bzip2",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bzip2",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/bzip2.bitReader).ReadBit (*compress/bzip2.bitReader).ReadBits (*compress/bzip2.bitReader).ReadBits64 (*bufio.Reader).ReadByte",
+			"path":  [
+				{
+					"name":  "(*compress/bzip2.bitReader).ReadBit"
+				},
+				{
+					"name":  "(*compress/bzip2.bitReader).ReadBits",
+					"site":  {
+						"filename":  "bit_reader.go",
+						"line":  "76",
+						"column":  "18"
+					}
+				},
+				{
+					"name":  "(*compress/bzip2.bitReader).ReadBits64",
+					"site":  {
+						"filename":  "bit_reader.go",
+						"line":  "71",
+						"column":  "22"
+					}
+				},
+				{
+					"name":  "(*bufio.Reader).ReadByte",
+					"site":  {
+						"filename":  "bit_reader.go",
+						"line":  "38",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "compress/bzip2",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "bzip2",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/bzip2.reader).setup (*compress/bzip2.bitReader).ReadBits (*compress/bzip2.bitReader).ReadBits64 (*bufio.Reader).ReadByte",
+			"path":  [
+				{
+					"name":  "(*compress/bzip2.reader).setup"
+				},
+				{
+					"name":  "(*compress/bzip2.bitReader).ReadBits",
+					"site":  {
+						"filename":  "bzip2.go",
+						"line":  "61",
+						"column":  "23"
+					}
+				},
+				{
+					"name":  "(*compress/bzip2.bitReader).ReadBits64",
+					"site":  {
+						"filename":  "bit_reader.go",
+						"line":  "71",
+						"column":  "22"
+					}
+				},
+				{
+					"name":  "(*bufio.Reader).ReadByte",
+					"site":  {
+						"filename":  "bit_reader.go",
+						"line":  "38",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "compress/bzip2",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		}
+	]
+}
+{
+	"capabilityInfo":  [
+		{
+			"packageName":  "flate",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/flate.decompressor).huffSym (*bufio.Reader).ReadByte",
+			"path":  [
+				{
+					"name":  "(*compress/flate.decompressor).huffSym"
+				},
+				{
+					"name":  "(*bufio.Reader).ReadByte",
+					"site":  {
+						"filename":  "inflate.go",
+						"line":  "720",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "compress/flate",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "flate",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/flate.decompressor).moreBits (*bufio.Reader).ReadByte",
+			"path":  [
+				{
+					"name":  "(*compress/flate.decompressor).moreBits"
+				},
+				{
+					"name":  "(*bufio.Reader).ReadByte",
+					"site":  {
+						"filename":  "inflate.go",
+						"line":  "697",
+						"column":  "24"
+					}
+				}
+			],
+			"packageDir":  "compress/flate",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "flate",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/flate.decompressor).copyData io.ReadFull",
+			"path":  [
+				{
+					"name":  "(*compress/flate.decompressor).copyData"
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "inflate.go",
+						"line":  "661",
+						"column":  "25"
+					}
+				}
+			],
+			"packageDir":  "compress/flate",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "flate",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/flate.decompressor).dataBlock io.ReadFull",
+			"path":  [
+				{
+					"name":  "(*compress/flate.decompressor).dataBlock"
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "inflate.go",
+						"line":  "630",
+						"column":  "24"
+					}
+				}
+			],
+			"packageDir":  "compress/flate",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "flate",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/flate.decompressor).huffmanBlock (*compress/flate.decompressor).huffSym (*bufio.Reader).ReadByte",
+			"path":  [
+				{
+					"name":  "(*compress/flate.decompressor).huffmanBlock"
+				},
+				{
+					"name":  "(*compress/flate.decompressor).huffSym",
+					"site":  {
+						"filename":  "inflate.go",
+						"line":  "495",
+						"column":  "22"
+					}
+				},
+				{
+					"name":  "(*bufio.Reader).ReadByte",
+					"site":  {
+						"filename":  "inflate.go",
+						"line":  "720",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "compress/flate",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "flate",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/flate.decompressor).readHuffman (*compress/flate.decompressor).huffSym (*bufio.Reader).ReadByte",
+			"path":  [
+				{
+					"name":  "(*compress/flate.decompressor).readHuffman"
+				},
+				{
+					"name":  "(*compress/flate.decompressor).huffSym",
+					"site":  {
+						"filename":  "inflate.go",
+						"line":  "410",
+						"column":  "22"
+					}
+				},
+				{
+					"name":  "(*bufio.Reader).ReadByte",
+					"site":  {
+						"filename":  "inflate.go",
+						"line":  "720",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "compress/flate",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "flate",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/flate.decompressor).nextBlock (*compress/flate.decompressor).moreBits (*bufio.Reader).ReadByte",
+			"path":  [
+				{
+					"name":  "(*compress/flate.decompressor).nextBlock"
+				},
+				{
+					"name":  "(*compress/flate.decompressor).moreBits",
+					"site":  {
+						"filename":  "inflate.go",
+						"line":  "304",
+						"column":  "24"
+					}
+				},
+				{
+					"name":  "(*bufio.Reader).ReadByte",
+					"site":  {
+						"filename":  "inflate.go",
+						"line":  "697",
+						"column":  "24"
+					}
+				}
+			],
+			"packageDir":  "compress/flate",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "flate",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/flate.decompressor).Read (*compress/flate.decompressor).copyData$thunk (*compress/flate.decompressor).copyData io.ReadFull",
+			"path":  [
+				{
+					"name":  "(*compress/flate.decompressor).Read"
+				},
+				{
+					"name":  "(*compress/flate.decompressor).copyData$thunk",
+					"site":  {
+						"filename":  "inflate.go",
+						"line":  "348",
+						"column":  "9"
+					}
+				},
+				{
+					"name":  "(*compress/flate.decompressor).copyData"
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "inflate.go",
+						"line":  "661",
+						"column":  "25"
+					}
+				}
+			],
+			"packageDir":  "compress/flate",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		}
+	]
+}
+{
+	"capabilityInfo":  [
+		{
+			"packageName":  "gzip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/gzip.Reader).readString (*bufio.Reader).ReadByte",
+			"path":  [
+				{
+					"name":  "(*compress/gzip.Reader).readString"
+				},
+				{
+					"name":  "(*bufio.Reader).ReadByte",
+					"site":  {
+						"filename":  "gunzip.go",
+						"line":  "148",
+						"column":  "31"
+					}
+				}
+			],
+			"packageDir":  "compress/gzip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "gzip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/gzip.Reader).Read io.ReadFull",
+			"path":  [
+				{
+					"name":  "(*compress/gzip.Reader).Read"
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "gunzip.go",
+						"line":  "261",
+						"column":  "27"
+					}
+				}
+			],
+			"packageDir":  "compress/gzip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "gzip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/gzip.Reader).readHeader io.ReadFull",
+			"path":  [
+				{
+					"name":  "(*compress/gzip.Reader).readHeader"
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "gunzip.go",
+						"line":  "175",
+						"column":  "25"
+					}
+				}
+			],
+			"packageDir":  "compress/gzip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "gzip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/gzip.Writer).writeString io.WriteString",
+			"path":  [
+				{
+					"name":  "(*compress/gzip.Writer).writeString"
+				},
+				{
+					"name":  "io.WriteString",
+					"site":  {
+						"filename":  "gzip.go",
+						"line":  "126",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "compress/gzip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "gzip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/gzip.Reader).Reset (*compress/gzip.Reader).readHeader io.ReadFull",
+			"path":  [
+				{
+					"name":  "(*compress/gzip.Reader).Reset"
+				},
+				{
+					"name":  "(*compress/gzip.Reader).readHeader",
+					"site":  {
+						"filename":  "gunzip.go",
+						"line":  "113",
+						"column":  "32"
+					}
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "gunzip.go",
+						"line":  "175",
+						"column":  "25"
+					}
+				}
+			],
+			"packageDir":  "compress/gzip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "gzip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/gzip.Writer).Write (*compress/gzip.Writer).writeString io.WriteString",
+			"path":  [
+				{
+					"name":  "(*compress/gzip.Writer).Write"
+				},
+				{
+					"name":  "(*compress/gzip.Writer).writeString",
+					"site":  {
+						"filename":  "gzip.go",
+						"line":  "179",
+						"column":  "25"
+					}
+				},
+				{
+					"name":  "io.WriteString",
+					"site":  {
+						"filename":  "gzip.go",
+						"line":  "126",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "compress/gzip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "gzip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "compress/gzip.NewReader (*compress/gzip.Reader).Reset (*compress/gzip.Reader).readHeader io.ReadFull",
+			"path":  [
+				{
+					"name":  "compress/gzip.NewReader"
+				},
+				{
+					"name":  "(*compress/gzip.Reader).Reset",
+					"site":  {
+						"filename":  "gunzip.go",
+						"line":  "94",
+						"column":  "19"
+					}
+				},
+				{
+					"name":  "(*compress/gzip.Reader).readHeader",
+					"site":  {
+						"filename":  "gunzip.go",
+						"line":  "113",
+						"column":  "32"
+					}
+				},
+				{
+					"name":  "io.ReadFull",
+					"site":  {
+						"filename":  "gunzip.go",
+						"line":  "175",
+						"column":  "25"
+					}
+				}
+			],
+			"packageDir":  "compress/gzip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "gzip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/gzip.Writer).Close (*compress/gzip.Writer).Write (*compress/gzip.Writer).writeString io.WriteString",
+			"path":  [
+				{
+					"name":  "(*compress/gzip.Writer).Close"
+				},
+				{
+					"name":  "(*compress/gzip.Writer).Write",
+					"site":  {
+						"filename":  "gzip.go",
+						"line":  "237",
+						"column":  "10"
+					}
+				},
+				{
+					"name":  "(*compress/gzip.Writer).writeString",
+					"site":  {
+						"filename":  "gzip.go",
+						"line":  "179",
+						"column":  "25"
+					}
+				},
+				{
+					"name":  "io.WriteString",
+					"site":  {
+						"filename":  "gzip.go",
+						"line":  "126",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "compress/gzip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		},
+		{
+			"packageName":  "gzip",
+			"capability":  "CAPABILITY_UNANALYZED",
+			"depPath":  "(*compress/gzip.Writer).Flush (*compress/gzip.Writer).Write (*compress/gzip.Writer).writeString io.WriteString",
+			"path":  [
+				{
+					"name":  "(*compress/gzip.Writer).Flush"
+				},
+				{
+					"name":  "(*compress/gzip.Writer).Write",
+					"site":  {
+						"filename":  "gzip.go",
+						"line":  "216",
+						"column":  "10"
+					}
+				},
+				{
+					"name":  "(*compress/gzip.Writer).writeString",
+					"site":  {
+						"filename":  "gzip.go",
+						"line":  "179",
+						"column":  "25"
+					}
+				},
+				{
+					"name":  "io.WriteString",
+					"site":  {
+						"filename":  "gzip.go",
+						"line":  "126",
+						"column":  "26"
+					}
+				}
+			],
+			"packageDir":  "compress/gzip",
+			"capabilityType":  "CAPABILITY_TYPE_DIRECT"
+		}
+	]
+}
