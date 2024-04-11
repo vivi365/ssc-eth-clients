@@ -2,7 +2,7 @@
 
 SRC_DIR=~/go-ethereum
 cd $SRC_DIR || exit 1
-OUT=~/ssc-eth-clients/data/dependencies
+OUT=~/ssc-eth-clients/data/dependencies/graphs
 mkdir -p $OUT
 
 # list purpose of each package in geth
