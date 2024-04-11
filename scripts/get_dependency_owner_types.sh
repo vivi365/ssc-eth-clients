@@ -3,6 +3,7 @@
 # TODO this is hard coded, redundant and ugly :-(
 SRC_DIR=~/go-ethereum
 OUT=~/ssc-eth-clients/data/dependencies/reports
+# TODO checkout correct commit
 
 # handles from go.mod, processed ~~manually~~
 CORE_DEVS=("cespare" "fjl" "gballet" "holiman" "karalabe" )
@@ -62,3 +63,24 @@ echo "Total dependencies: $NUM_DEPENDENCIES" >> "$OUT/$POSTFIX"
 NUM_IND=$(cat $OUT/$POSTFIX | grep -c '// indirect')
 echo "Total indirect: $NUM_IND" >> $OUT/$POSTFIX
 
+echo -e "\n --- organizations ---"
+for o in "${ORG_OR_COMMUNITY[@]}"; 
+do
+    # dummy 
+    D=$(cat ./data/dependencies/reports/dependencies_organisations.txt | grep -Ewi $o)
+    D1=$(echo "$D" | wc -l)
+    D2=$(echo "$D" | grep -c 'indirect')
+    echo -e "$o dependencies: $D1 Indirect: $D2"
+done
+
+# cat ./data/dependencies/reports/dependencies_organisations.txt | grep -Ewi -c 'golang.org|go.uber|google|golang|gopkg.in' 
+
+echo -e "\n --- individuals ---"
+for o in "${INDIVIDUALS[@]}"; 
+do
+    # dummy 
+    D=$(cat ./data/dependencies/reports/dependencies_individuals.txt | grep -Ewi $o)
+    D1=$(echo "$D" | wc -l)
+    D2=$(echo "$D" | grep -c 'indirect')
+    echo -e "$o dependencies: $D1 Indirect: $D2"
+done
