@@ -11,4 +11,4 @@
 
 Total owners: 5
 Total dependencies:       10
-Total indirect:        1
+Total indirect: 1

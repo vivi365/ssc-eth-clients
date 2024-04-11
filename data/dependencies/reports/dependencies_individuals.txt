@@ -48,4 +48,4 @@
 
 Total owners: 40
 Total dependencies:       47
-Total indirect:       26
+Total indirect: 26

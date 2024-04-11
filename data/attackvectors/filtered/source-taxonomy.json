@@ -1,0 +1,100 @@
+[
+ {
+  "avName": "Conduct Open-Source Supply Chain Attack",
+  "avId": "AV-000",
+  "children": [
+   {
+    "avName": "Subvert Legitimate Package",
+    "avId": "AV-001",
+    "children": [
+     {
+      "avName": "Inject into Sources of Legitimate Package",
+      "avId": "AV-300",
+      "children": [
+       {
+        "avName": "Introduce Malicious Code through Hypocrite Merge Request",
+        "avId": "AV-301",
+        "children": [
+         {
+          "avName": "Make Immature Vulnerability Exploitable",
+          "avId": "AV-304"
+         },
+         {
+          "avName": "Exploit Rendering Weakness",
+          "avId": "AV-305",
+          "children": [
+           {
+            "avName": "Exploit Unicode Bidirectional Algorithm",
+            "avId": "AV-306"
+           },
+           {
+            "avName": "Use Homoglyphs",
+            "avId": "AV-307"
+           },
+           {
+            "avName": "Prevent Display of File Differences",
+            "avId": "AV-308"
+           },
+           {
+            "avName": "Hide in Generated/Compiled/Minified Code",
+            "avId": "AV-309"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "avName": "Contribute as Maintainer",
+        "avId": "AV-302",
+        "children": [
+         {
+          "avName": "Compromise Maintainer System",
+          "avId": "AV-700",
+          "children": [
+           {
+            "avName": "Exploit Weak Configuration",
+            "avId": "AV-701"
+           },
+           {
+            "avName": "Exploit Vulnerabilities",
+            "avId": "AV-702"
+           },
+           {
+            "avName": "Infect through Malicious Component",
+            "avId": "AV-703"
+           }
+          ]
+         }
+        ]
+       },
+       {
+        "avName": "Tamper with Version Control System",
+        "avId": "AV-303",
+        "children": [
+         {
+          "avName": "Compromise Version Control System",
+          "avId": "AV-700",
+          "children": [
+           {
+            "avName": "Exploit Weak Configuration",
+            "avId": "AV-701"
+           },
+           {
+            "avName": "Exploit Vulnerabilities",
+            "avId": "AV-702"
+           },
+           {
+            "avName": "Infect through Malicious Component",
+            "avId": "AV-703"
+           }
+          ]
+         }
+        ]
+       }
+      ]
+     }
+    ]
+   }
+  ]
+ }
+]
